@@ -1,0 +1,75 @@
+.JobFlowPage1{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .Sec1{
+
+        background-color: #ffff;
+        margin-top: 1rem; 
+        width: 100%;
+        display: flex;
+        border-radius: 10px;
+        justify-content: space-between;
+
+        .Sec1Left{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1em;
+            padding-right: 2.5em;
+
+            .InputGroup{
+                width: 100%;
+                #jobRole{
+                    width: 100%;
+                }
+                .inputSetPage1{
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    
+                    #jobstate{
+                        margin-right: 1rem;
+                        width: 120%;
+                    }
+                    #jobCity{
+                        width: 100%;
+                    }
+                }
+                #ExpReq{
+                    width: 100%;
+                }
+            }
+           
+        }
+        .Sec1Right{
+            width: 40%;
+            padding: 1em;
+            padding-right: 2.5em;
+        }
+
+    }
+
+    .Sec2{
+        background-color: white;
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+        .Sec2Left{
+            width: 40%;
+            padding: 1em;
+            padding-right: 2.5em;
+        }
+        .Sec2Right{
+            width: 40%;
+            padding: 1em;
+            padding-right: 2.5em;
+        }
+        
+
+    }
+}

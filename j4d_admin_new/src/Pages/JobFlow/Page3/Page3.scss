@@ -7,14 +7,76 @@
 
     .TopNav{
         height: fit-content;
-        margin-bottom: 1em;
     }
     .Header{
         height: fit-content;
     }
     .Sec1{
+        width: 100%;
+        margin-top: 1rem; 
+        padding: 0.25em;
+        width: 100%;
+        display: flex;
+        background-color: white;
+        border-radius: 10px;
 
+        .Sec1Left{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 1rem;
+            .InpGroup{
+                width: 90%;
+                margin-right: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+
+                .col1{
+                    width: 50%;
+                }
+                .col2{
+                    width: 50%;
+                }
+            }
+
+        }
+        .Sec1Right{
+            width: 40%;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            #TextArea{
+                width: 90%;
+                border-radius: 5px;
+                padding: 1em;
+                border: 1px solid #c0c0c0;
+            }
+        }
     }
-    .Sec2{}
+    .Sec2{
+        background-color: #ffff;
+        margin-top: 1rem; 
+        padding: 0.25em;
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        .Sec2Left{
+            width: 35%;
+            padding: 1rem;
+        }
+        .Sec2Right{
+            width: 40%;
+            padding: 1rem;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+    }
     .Footer{}
 }

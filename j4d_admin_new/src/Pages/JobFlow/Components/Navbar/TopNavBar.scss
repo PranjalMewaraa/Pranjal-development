@@ -2,12 +2,21 @@
     background-color: #ffff;
     padding: .25em;
     width: 100%;
+    height: fit-content;
+    margin-bottom: 1rem;
     border-radius: 10px;
     ul{
         display: flex;
         list-style: none;
+        
         li{
             margin-right:2rem;
+            font-weight: 700;
+
+            a{
+                color: black;
+                text-decoration: none;
+            }
         }
     }
     

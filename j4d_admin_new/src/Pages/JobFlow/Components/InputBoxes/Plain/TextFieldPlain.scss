@@ -1,0 +1,19 @@
+.InputFieldPlain{
+    margin: .5em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .textInput{
+        padding: 0.75rem;
+        font-size: large;
+        width: 95%;
+        border: 1px #d6d6d6 solid;
+        border-radius: 5px;
+    }
+    .textInput:focus{
+        border: 1px solid #c0c0c0 ;
+    }
+
+}
