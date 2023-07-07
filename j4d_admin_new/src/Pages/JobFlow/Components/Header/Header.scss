@@ -1,0 +1,57 @@
+.J4D-Admin-Header{
+    background: #ffff;
+    width: 100%;
+    display: flex;
+    border-radius: .5rem;
+    height: 25vh;
+    overflow: hidden;
+    flex-direction: column;
+
+    .J4D-Admin-Header-TOP{
+        display: flex;
+        justify-content: space-between;
+        
+        height: 98%;
+
+        .J4D-Admin-Header-left{
+            
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            #headerTitle{
+                font-size: 5em;
+                font-weight: normal;
+                
+            }
+        }
+        .J4D-Admin-Header-right{
+            
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+
+            .vectorImgHeader{
+                max-height: 240px;
+                max-height: 240px;
+                overflow-y: hidden;
+            }
+        }
+    }
+
+    .J4D-Admin-Header-BoTTom{
+        
+        height: 2%;
+
+        .seekbarHeader{
+            background-color: #0075BD;
+            width: 10%;
+            height: 100%;
+            border-radius: 10%;
+        }
+    }
+}
+
