@@ -1,7 +1,5 @@
 .App {
   text-align: center;
-  font-family: 'Poppins';
-  background-color: #F7F6FA;
 }
 
 .App-logo {
@@ -37,42 +35,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.primaryButton{
-  background-color: #06283d;
-  color: white;
-  padding: 0.5rem;
-  font-size: larger;
-  font-family: 'poppins';
-  padding-left: 2rem;
-  padding-right: 2rem;
-  width: fit-content;
-  margin: 0.5rem;
-  margin-top: 1rem;
-  /* margin-right: 0.5rem; */
-  height: fit-content;
-  border-radius:5px;
-  border: 2px solid #06283d;
-}
-.SecondaryButton{
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  padding: 0.5rem;
-  /* margin-right: 0.1rem; */
-  font-size: larger;
-  font-family: 'poppins';
-  margin: .5rem;
-  margin-top: 1rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  width: fit-content;
-  height: fit-content;
-  border-radius: 5px;
-  border: 2px solid black ;
-}
-
-.TextInputAdminj4d{
-  padding: 1rem;
-  font-size: large;
 }
