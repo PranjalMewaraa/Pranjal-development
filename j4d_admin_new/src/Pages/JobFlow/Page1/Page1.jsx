@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import './page.scss'
 import TopNavBar from '../Components/Navbar/TopNavBar'
 import Header from '../Components/Header/Header'
@@ -101,3 +102,5 @@ const Page1 = () => {
         </div>    
   )
 }
+=======
+>>>>>>> parent of e3dbcd0 (Lot of work done)

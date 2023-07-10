@@ -1,8 +1,8 @@
 import Header from "../Components/Header/Header"
 import TopNav from "../Components/Navbar/TopNavBar"
 import imgHeader1 from "../Assets/vectorP1.png"
-import Footer from "../Components/Footer/Footer"
 import "./Page3.scss"
+<<<<<<< HEAD
 import ChipGroup from '../Components/InputBoxes/ChipGroup/ChipGroup';
 import Dropdown from "../Components/InputBoxes/DropDown/DropDownInput"
 import PlainInput from "../Components/InputBoxes/Plain/TextFieldPlain"
@@ -11,13 +11,17 @@ const Page3 = () =>{
 
     const navigate = useNavigate()
     const options = ['C++','JavaScript','React.js','Java','Angular.js','Node.js','DBMS','MongoDB','Express.js','MERN','Android','Flutter','React Native','Html CSS','No Sql', 'Data Structures','Algorithms'];
+=======
+const Page3 = () =>{
+>>>>>>> parent of e3dbcd0 (Lot of work done)
     return(
         <div className="J4D-admin-jobflow3">
             <div className="TopNav"><TopNav/></div>
             <div className="Header">
                 <Header
-                    Title = "Important Information"
+                    Title = "Basic Information"
                     vectorImg = {imgHeader1}
+<<<<<<< HEAD
                     page = "3"
                 />
             </div>
@@ -93,8 +97,13 @@ const Page3 = () =>{
                     }}
                     secondary2="Discard"
                     secondary2Onclick={''}
+=======
+>>>>>>> parent of e3dbcd0 (Lot of work done)
                 />
             </div>
+            <div className="Sec1"></div>
+            <div className="Sec2"></div>
+            <div className="Footer"></div>
         </div>
     )
 }

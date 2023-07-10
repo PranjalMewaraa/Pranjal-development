@@ -2,9 +2,8 @@
     background-color: #ffff;
     padding: .25em;
     width: 100%;
-    height: fit-content;
-    margin-bottom: 1rem;
     border-radius: 10px;
+<<<<<<< HEAD
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,6 +24,13 @@
                     text-decoration: none;
                 }
             }
+=======
+    ul{
+        display: flex;
+        list-style: none;
+        li{
+            margin-right:2rem;
+>>>>>>> parent of e3dbcd0 (Lot of work done)
         }
     }
     .NavRight{

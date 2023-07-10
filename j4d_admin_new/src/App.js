@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import Header from './Pages/JobFlow/Components/Header/Header';
+<<<<<<< HEAD
 import Page1 from './Pages/JobFlow/Page1/Page1'
 import NavBar from './Pages/JobFlow/Components/MainNavBar/NavBar';
 import PlainInput from './Pages/JobFlow/Components/InputBoxes/Plain/TextFieldPlain';
@@ -13,11 +14,14 @@ import Page3 from './Pages/JobFlow/Page3/Page3';
 import Page4 from './Pages/JobFlow/page4/Page4'
 import DashBoard from './Pages/DashBoard/DashBoard';
 
+=======
+import Page3 from './Pages/JobFlow/Page3/Page3'
+>>>>>>> parent of e3dbcd0 (Lot of work done)
 
 function App() {
-  
   return (
     <div className="App">
+<<<<<<< HEAD
       <NavBar/>
       <BrowserRouter>
       <Routes>
@@ -30,6 +34,9 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+=======
+      <Page3/>
+>>>>>>> parent of e3dbcd0 (Lot of work done)
     </div>
   );
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Header from '../Components/Header/Header';
 import DoubleRangeSlider from '../Components/InputBoxes/Range/Range';
 import TopNav from '../Components/Navbar/TopNavBar'
@@ -86,3 +87,5 @@ const Page2 = () => {
     )
 }
 export default Page2
+=======
+>>>>>>> parent of e3dbcd0 (Lot of work done)
