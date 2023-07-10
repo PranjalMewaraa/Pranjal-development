@@ -5,10 +5,12 @@ import './Page2.scss'
 import Footer from '../Components/Footer/Footer'
 import vector from '../Assets/vectorP1.png'
 import React, { useState } from 'react';
+import {Routes, Route, useNavigate} from 'react-router-dom';
 import PlainInput from '../Components/InputBoxes/Plain/TextFieldPlain';
 import ChipGroup from '../Components/InputBoxes/ChipGroup/ChipGroup';
 
 const Page2 = () => {
+    const navigate = useNavigate()
     const options = ['Provident Fund', 'Rent Allowance', 'Stocks', 'Medical Insuarance', 'Wifi Allowance', 'Travel Allowance','Incentives', 'Flexible Hours','Provident Fund', 'Rent Allowance', 'Stocks', 'Medical Insuarance', 'Wifi Allowance', 'Travel Allowance','Incentives', 'Flexible Hours'];
   const [selectedOption, setSelectedOption] = useState('');
   const [inputValue, setInputValue] = useState('');
@@ -66,10 +68,18 @@ const Page2 = () => {
                 </div>
             </div>
             <div className="Footer">
-                <Footer
-                    primary='Next'
-                    secondary2='Discard'
-                    secondary1='Back'
+            <Footer
+                    primary="Next"
+                    primaryOnclick={() => {
+                        console.log('clicked')
+                        navigate('/postjob/importantInfo')
+                    }}
+                    secondary1="Back"
+                    secondary1Onclick={()=>{
+                        navigate('/postjob/basicInfo')
+                    }}
+                    secondary2="Discard"
+                    secondary2Onclick={''}
                 />
             </div>
         </div>

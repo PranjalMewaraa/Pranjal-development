@@ -6,9 +6,10 @@ import "./Page3.scss"
 import ChipGroup from '../Components/InputBoxes/ChipGroup/ChipGroup';
 import Dropdown from "../Components/InputBoxes/DropDown/DropDownInput"
 import PlainInput from "../Components/InputBoxes/Plain/TextFieldPlain"
+import {Routes, Route, useNavigate} from 'react-router-dom';
 const Page3 = () =>{
 
-
+    const navigate = useNavigate()
     const options = ['C++','JavaScript','React.js','Java','Angular.js','Node.js','DBMS','MongoDB','Express.js','MERN','Android','Flutter','React Native','Html CSS','No Sql', 'Data Structures','Algorithms'];
     return(
         <div className="J4D-admin-jobflow3">
@@ -80,10 +81,18 @@ const Page3 = () =>{
                 </div>
             </div>
             <div className="Footer">
-                <Footer
+            <Footer
                     primary="Next"
+                    primaryOnclick={() => {
+                        console.log('clicked')
+                        navigate('/postjob/finalize')
+                    }}
                     secondary1="Back"
+                    secondary1Onclick={()=>{
+                        navigate('/postjob/addCompensations')
+                    }}
                     secondary2="Discard"
+                    secondary2Onclick={''}
                 />
             </div>
         </div>
