@@ -4,12 +4,7 @@ import Header from '../Components/Header/Header'
 import imgHeader1 from '../Assets/vectorP1.png'
 import PlainInput from '../Components/InputBoxes/Plain/TextFieldPlain'
 import Footer from '../Components/Footer/Footer'
-import {Routes, Route, useNavigate} from 'react-router-dom';
 const Page1 = () => {
-    const navigate = useNavigate();
-    const Back =() =>{
-        navigate('/')
-    }
     return (
         <div className='JobFlowPage1'>
             <div className='TopNav'>
@@ -99,17 +94,10 @@ const Page1 = () => {
             <div className='Footer'>
                 <Footer
                     primary="Next"
-                    primaryOnclick={() => {
-                        navigate('/postjob/addCompensations')
-                    }}
                     secondary1="Back"
-                    secondary1Onclick={Back}
                     secondary2="Discard"
-                    secondary2Onclick={''}
                 />
             </div>
-        </div>
-    )
+        </div>    
+  )
 }
-
-export default Page1
