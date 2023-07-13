@@ -13,6 +13,7 @@ import Page3 from './Pages/JobFlow/Page3/Page3';
 import Page4 from './Pages/JobFlow/page4/Page4'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React, { useState } from 'react';
+import Posted_jobs from './Pages/Posted_Jobs/PostedJob_Page/Posted_jobs';
 
 function App() {
   const [updatedObject, setUpdatedObject] = useState({});
@@ -38,6 +39,7 @@ function App() {
             <Route path="/postjob/compensation" element={<Page2 handleUpdateObject={handleUpdateObject} />} />
             <Route path="/postjob/importantinfo" element={<Page3 handleUpdateObject={handleUpdateObject} />} />
             <Route path="/postjob/finalize" element={<Page4 />} />
+            <Route path="/postjob/Jobdetails" element={<Posted_jobs />} />
           </Route>
         </Routes>
       </BrowserRouter>
