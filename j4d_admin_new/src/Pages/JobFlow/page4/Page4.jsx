@@ -1,11 +1,13 @@
-import './page4.scss'
+// import './page4.scss'
 import TopNavBar from '../Components/Navbar/TopNavBar'
 import Img from '../Assets/vectorP1.png'
+import React, { useState } from 'react';
 import Header  from "../Components/Header/Header";
 import PlainInput from '../Components/InputBoxes/Plain/TextFieldPlain';
-import Toggle from '../Components/InputBoxes/ToggleButton/Toggle';
+import Toggle from '../Components/Buttons/ToggleButton/Toogle'
 import Footer from '../Components/Footer/Footer';
 import {Routes, Route, useNavigate} from 'react-router-dom';
+
 
 const options = [
     {value: 'value-1', text: 'text-1'},
@@ -17,7 +19,7 @@ const options = [
 const Page4 = () =>{
     const navigate = useNavigate()
     return(
-        <div className='JobFlowPage4'>
+        <div className='J4D-admin-jobflow4'>
             <div className='TopNav'> <TopNavBar/> </div>
             <div className='Header'> 
                 <Header Title = 'Set Preferance and Finalize' vectorImg={Img} page="4" />
@@ -27,11 +29,13 @@ const Page4 = () =>{
                     <PlainInput
                         id = "rECRUITEReMAIL"
                         type = "email"
+                        onChange=''
                         placeholder="xyz@Domain.com"
                         label ="Recruiter's Email Address"
                     />
                     <PlainInput
                         id = "RecruiterLinkedin"
+                        onChange=''
                         type = "url"
                         placeholder="www.linkedin.com/in/..."
                         label ="Recruiter's Linkedin"
@@ -45,6 +49,7 @@ const Page4 = () =>{
                             <PlainInput 
                                 id="yrsExpPref"
                                 type="number"
+                                onChange=''
                                 placeholder='0'
                             />
                         </span>
@@ -72,12 +77,14 @@ const Page4 = () =>{
                         id = "LocPref"
                         type = "text"
                         placeholder="Mumbai"
+                        onChange=''
                         label ="Location Preferance"
                     />
                     <PlainInput
                         id = "AppDeadline"
                         type = "date"
                         placeholder="15/07/2003"
+                        onChange=''
                         label ="Set Application Deadline"
                     />
                 </div> 
@@ -97,16 +104,9 @@ const Page4 = () =>{
             <div className='Footer'>
             <Footer
                     primary="Post"
-                    primaryOnclick={() => {
-                        console.log('clicked')
-                        navigate('/')
-                    }}
+                    next = '/'
                     secondary1="Back"
-                    secondary1Onclick={()=>{
-                        navigate('/postjob/importantInfo')
-                    }}
                     secondary2="Discard"
-                    secondary2Onclick={''}
                 />
             </div>
         </div>

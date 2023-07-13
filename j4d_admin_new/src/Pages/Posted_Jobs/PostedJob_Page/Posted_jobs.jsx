@@ -1,0 +1,1 @@
+import './Posted_jobs.scss'

@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 
-import './App.css';
+import './App.scss';
 import Header from './Pages/JobFlow/Components/Header/Header';
 import Page1 from './Pages/JobFlow/Page1/Page1'
 import NavBar from './Pages/JobFlow/Components/MainNavBar/NavBar';
@@ -11,21 +11,32 @@ import Page2 from './Pages/JobFlow/Page2/Page2';
 import TwoThumbSlider from './Pages/JobFlow/Components/InputBoxes/Range/Range';
 import Page3 from './Pages/JobFlow/Page3/Page3';
 import Page4 from './Pages/JobFlow/page4/Page4'
-import DashBoard from './Pages/DashBoard/DashBoard';
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useState } from 'react';
 
 function App() {
+  const [updatedObject, setUpdatedObject] = useState({});
   
+  const handleUpdateObject = (updatedValues) => {
+    debugger;
+    setUpdatedObject((prevObject) => ({
+
+      ...prevObject,
+      ...updatedValues,
+    }));
+  };
+  console.log("inAPP.js"+typeof(handleUpdateObject))
+  console.log(''+JSON.stringify(updatedObject, null, 2))
   return (
     <div className="App">
       <NavBar/>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={""}>
-            <Route index element={<Page1/>} />
-            <Route path="/postjob/basicinfo" element={<Page1/>} />
-            <Route path="/postjob/compensation" element={<Page2/>} />
-            <Route path="/postjob/importantinfo" element={<Page3 />} />
+            <Route index element={<Page1 handleUpdateObject={handleUpdateObject} updatedObject={updatedObject}/>} />
+            <Route path="/postjob/basicinfo" element={<Page1 handleUpdateObject={handleUpdateObject}/>} />
+            <Route path="/postjob/compensation" element={<Page2 handleUpdateObject={handleUpdateObject} />} />
+            <Route path="/postjob/importantinfo" element={<Page3 handleUpdateObject={handleUpdateObject} />} />
             <Route path="/postjob/finalize" element={<Page4 />} />
           </Route>
         </Routes>

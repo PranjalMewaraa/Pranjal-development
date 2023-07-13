@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Chip.scss'
+
 const ChipButtonGroup = ({ options, onChange }) => {
   const [selectedOptions, setSelectedOptions] = useState([]);
 

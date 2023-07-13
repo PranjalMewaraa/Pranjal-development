@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './Range.scss'
+//import './Range.scss'
 
 
-const DoubleRangeSlider = () => {
+const DoubleRangeSlider = (props) => {
   const [sliderWidth, setSliderWidth] = useState(0);
   const [offsetSliderWidth, setOffsetSliderWidth] = useState(0);
-  const [min, setMin] = useState(0);
-  const [max, setMax] = useState(200);
+  const [min, setMin] = useState(props.minValue);
+  const [max, setMax] = useState(props.maxValue);
   const [minValueBetween, setMinValueBetween] = useState(10);
   const [currentMin, setCurrentMin] = useState(55);
   const [inputMin, setInputMin] = useState(55);
@@ -20,7 +20,8 @@ const DoubleRangeSlider = () => {
   useEffect(() => {
     minValueRef.current.style.width = `${((currentMin - min) * 100) / (max - min)}%`;
     maxValueRef.current.style.width = `${((currentMax - min) * 100) / (max - min)}%`;
-
+    setMin(props.minValue); // Update the min state with the prop value
+    setMax(props.maxValue); // Update the max state with the prop value
     setSliderWidth(sliderRef.current.offsetWidth);
     setOffsetSliderWidth(sliderRef.current.offsetLeft);
   }, [currentMin, currentMax, max, min]);
@@ -33,6 +34,7 @@ const DoubleRangeSlider = () => {
     if (inputMin >= min && inputMin <= currentMax - minValueBetween) {
       setCurrentMin(inputMin);
       minValueRef.current.style.width = `${((inputMin - min) * 100) / (max - min)}%`;
+      props.onMinChange(e);
     }
   };
 
@@ -44,6 +46,7 @@ const DoubleRangeSlider = () => {
     if (inputMax >= currentMin + minValueBetween && inputMax <= max) {
       setCurrentMax(inputMax);
       maxValueRef.current.style.width = `${((inputMax - min) * 100) / (max - min)}%`;
+      props.onMaxChange(e);
     }
   };
 
@@ -114,8 +117,17 @@ const DoubleRangeSlider = () => {
 
   const minForMax = () => currentMin + minValueBetween;
 
+  // const minFunc =()=>{
+  //   handleSetMin();
+  //   {props.MinChange}
+  // }
+  // const maxFunc =()=>{
+  //   handleSetMax();
+    
+  // }
   return (
-    <div className="card">
+    <div className='Range'>
+        <div className="card">
       <div className="linear-horizontal-layout">
         
         <div id='minInp'>
@@ -123,6 +135,7 @@ const DoubleRangeSlider = () => {
         <input
           id="min-input"
           type="number"
+          name='MinSalaryRange'
           onChange={handleSetMin}
           value={inputMin}
           min={min}
@@ -143,6 +156,7 @@ const DoubleRangeSlider = () => {
         <input
           id="max-input"
           type="number"
+          name='MaxSalaryRange'
           onChange={handleSetMax}
           value={inputMax}
           min={minForMax()}
@@ -152,6 +166,8 @@ const DoubleRangeSlider = () => {
         
       </div>
     </div>
+    </div>
+    
   );
 };
 

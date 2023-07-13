@@ -1,0 +1,837 @@
+.App {
+  text-align: center;
+  font-family: 'Poppins';
+  background-color: #F7F6FA;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.primaryButton{
+  background-color: #06283d;
+  color: white;
+  padding: 0.5rem;
+  font-size: larger;
+  font-family: 'poppins';
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: fit-content;
+  margin: 0.5rem;
+  margin-top: 1rem;
+  /* margin-right: 0.5rem; */
+  height: fit-content;
+  border-radius:5px;
+  border: 2px solid #06283d;
+}
+.SecondaryButton{
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 0.5rem;
+  /* margin-right: 0.1rem; */
+  font-size: larger;
+  font-family: 'poppins';
+  margin: .5rem;
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 5px;
+  border: 2px solid black ;
+}
+
+.TextInputAdminj4d{
+  padding: 1rem;
+  font-size: large;
+}
+
+
+
+.ToggleSwitch{
+  margin: 0.75rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+
+  .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+    
+    /* Hide default HTML checkbox */
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    /* The slider */
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+    
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+    
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+    
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+    
+    .slider.round:before {
+      border-radius: 50%;
+    }
+}
+
+.FooterComp{
+
+  width: 100%;
+  background-color: white;
+  display: flex;
+  background-color: #ececec;
+  height: 15vh;
+
+  .Fleft{
+      width: 50%;
+      display: flex;
+      align-items: flex-start;
+      padding-left: 2.5em;
+      justify-content: flex-start;
+      
+  }
+  .Fright{
+      width: 50%;
+      display: flex;
+      align-items: flex-start;
+      padding-right: 2.5em;
+      justify-content: flex-end;
+  }
+}
+
+.J4D-Admin-Header{
+  background: #ffff;
+  width: 100%;
+  display: flex;
+  border-radius: .5rem;
+  height: 25vh;
+  padding: 0.25em;
+  overflow: hidden;
+  flex-direction: column;
+
+  .J4D-Admin-Header-TOP{
+      display: flex;
+      justify-content: space-between;
+      
+      height: 98%;
+
+      .J4D-Admin-Header-left{
+          
+          width: 60%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+
+          #headerTitle{
+              font-size: 5em;
+              font-weight: normal;
+              
+          }
+      }
+      .J4D-Admin-Header-right{
+          
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      
+
+          .vectorImgHeader{
+              max-height: 240px;
+              max-height: 240px;
+              overflow-y: hidden;
+          }
+      }
+  }
+
+  .J4D-Admin-Header-BoTTom{
+      
+      height: 2%;
+
+      .seekbarHeader{
+          background-color: #0075BD;
+          width: 10%;
+          height: 100%;
+          border-radius: 10%;
+      }
+  }
+}
+
+
+
+  
+  
+.ChipGroup{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-flow: wrap;
+
+  .ChipButton{
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0.25rem;
+    background-color: aliceblue;
+    border-radius: 20px;
+  
+  }
+  .selected{
+    color: white;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0.25rem;
+    border-radius: 20px;
+    background-color: #06283d;
+  }
+}
+
+.InputFieldPlain{
+  margin: .5em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+  .textInput{
+      padding: 0.75rem;
+      font-size: large;
+      width: 95%;
+      border: 1px #d6d6d6 solid;
+      border-radius: 5px;
+  }
+  .textInput:focus{
+      border: 1px solid #c0c0c0 ;
+  }
+
+}
+
+.Range{
+
+  $border-radius: 20px;
+
+  $primary: #709fdc;
+  $base: #071739;
+  $shadow-color:  #274684;
+  $lighter-shadow: rgba($shadow-color, .2);
+  $white: #fff;
+  $gray: #8c8c8c;
+  $lighter-gray: rgba($gray, .1);
+  $time-line-width: 240px;
+  $transition: .3s all ease;
+  
+  @mixin dragIndicator($property, $background, $z-index) {
+    #{$property}{
+      position: absolute;
+      top: 0;
+      z-index: $z-index;
+      width: 0;
+      height: 5px;
+      border-radius: 5px;
+      background: $background;
+      transition: width $transition;
+      &:hover{
+        &::before{
+          opacity: 1;
+        }
+        &::after{
+          opacity: 1;
+        }
+      }
+      &::before{
+        opacity: 0;
+        content: attr(data-content);
+        display: block;
+        position: absolute;
+        top: -40px;
+        right: -23px;
+        width: 40px;
+        padding: 3px;
+        text-align: center;
+        color: white;
+        background: $shadow-color;
+        border-radius: $border-radius;
+      }
+      &::after{
+        opacity: 0;
+        content:'';
+        display: block;
+        position: absolute;
+        top: -18px;
+        right: -8px;
+        border-top: 8px solid $shadow-color;
+        border-left:8px solid transparent;
+        border-right:8px solid transparent;
+      }
+      #{$property}-drag{
+        position: absolute;
+        right: -7.5px;
+        top: -5px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: $base;
+        transition: all .3s;
+        &:hover{
+          box-shadow: 0 0 0 6px $lighter-shadow;
+        }
+      }
+    }
+  }
+  
+  body{
+    font-family: 'Rubik', sans-serif;
+    color: $base;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: $lighter-gray;
+  }
+  
+  .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    overflow: hidden;
+  }
+  
+  .card h2{
+    margin-bottom: 40px;
+  }
+  
+  .card .current-value{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .card .current-value label{
+    font-size: 20px;
+  }
+  
+  .card .current-value input{
+    margin: 0;
+    width: 60px;
+    font-size: 16px;
+    color: white;
+    padding: 5px;
+    padding-left: 15px;
+    border: none;
+    border-radius: $border-radius;
+    background: $shadow-color;
+  }
+  
+  .card .values{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: $time-line-width;
+  }
+  
+  #slider{
+    position: relative;
+    margin: 0 auto;
+    width: $time-line-width;
+    height: 5px;
+    background: $primary;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @include dragIndicator("#min", $primary, 2);
+  @include dragIndicator("#max", $shadow-color, 1);
+  
+  .card .current-value {
+    justify-content: flex-start;
+  }
+  
+  .card .current-value input {
+    margin-left: 10px;
+  }
+  
+  .card .values {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .linear-horizontal-layout{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+  
+    input{
+      padding:.75em;
+      border: 1px #d6d6d6 solid;
+      border-radius: 5px;
+      min-width: 50%;
+    }
+  }
+  #minInp,#maxInp{
+    margin-inline: 0.5rem;
+  }
+}
+
+.NavContainer{
+  width: 100%;
+  min-width: 100vw;
+  height: 5%;
+  margin-bottom: 1rem;
+  background-color: #06283d;
+  .navContent{
+      width: 90%;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: flex-start;
+      justify-content: flex-start;
+  }
+}
+
+.TopNavigation{
+  background-color: #ffff;
+  padding: .25em;
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  ul{
+      display: flex;
+      list-style: none;
+      
+      li{
+          margin-right:2rem;
+          font-weight: 700;
+
+          a{
+              color: black;
+              text-decoration: none;
+          }
+      }
+  }
+  
+}
+
+.J4D-admin-jobflow1{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  
+  .Sec1{
+
+      background-color: #ffff;
+      margin-top: 1rem; 
+      width: 100%;
+      display: flex;
+      border-radius: 10px;
+      justify-content: space-between;
+
+      .Sec1Left{
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 1em;
+          padding-right: 2.5em;
+
+          .InputGroup{
+              width: 100%;
+              #jobRole{
+                  width: 100%;
+              }
+              .inputSetPage1{
+                  display: flex;
+                  width: 100%;
+                  justify-content: space-between;
+                  
+                  #jobstate{
+                      margin-right: 1rem;
+                      width: 120%;
+                  }
+                  #jobCity{
+                      width: 100%;
+                  }
+              }
+              #ExpReq{
+                  width: 100%;
+              }
+          }
+         
+      }
+      .Sec1Right{
+          width: 40%;
+          padding: 1em;
+          padding-right: 2.5em;
+      }
+
+  }
+
+  .Sec2{
+      background-color: white;
+      margin-top: 1rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      
+      .Sec2Left{
+          width: 40%;
+          padding: 1em;
+          padding-right: 2.5em;
+      }
+      .Sec2Right{
+          width: 40%;
+          padding: 1em;
+          padding-right: 2.5em;
+      }
+      
+
+  }
+}
+.J4D-admin-jobflow2{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  .Sec1{
+      background-color: #ffff;
+      margin-top: 1rem; 
+      padding: 0.25em;
+      width: 100%;
+      display: flex;
+      border-radius: 10px;
+      justify-content: space-between;
+
+      .Sec1Left{
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 1em;
+          padding-right: 2.5em;
+          
+          .InputFieldX{
+              margin: .5em;
+              display: flex;
+              justify-content: flex-start;
+              align-items: flex-start;
+              flex-direction: column;
+
+              #optionInput{
+                  padding: 1em;
+                  width: 80%;
+                  border: 1px #d6d6d6 solid;
+                  border-radius: 5px;
+              }
+          }
+      }
+      .Sec1Right{
+          width: 40%;
+          padding: 1em;
+          padding-right: 2.5em;
+          display: flex;
+          justify-content: center;
+
+          .InputFieldX{
+              margin: .5em;
+              display: flex;
+              
+              width: 100%;
+              justify-content: center;
+              align-items: flex-end;
+              flex-direction: column;
+
+              #valueInputNumber{
+                  padding: 1em;
+                  width: 100%;
+                  border: 1px #d6d6d6 solid;
+                  border-radius: 5px;
+              }
+              .SecRightInput{
+                  display: flex;
+                  justify-content: start;
+                  width: 100%;
+                  flex-direction: column;
+                  
+                  align-items: start;
+                  
+                  #valueInputNumber{
+                      width: 60%;
+                  }
+              }
+              
+          }
+      }
+  }
+  .Sec2{
+      background-color: #ffff;
+      margin-top: 1rem; 
+      padding: 0.25em;
+      width: 100%;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      .Sec2Left{
+          width: 35%;
+          padding: 1rem;
+      }
+      .Sec2Right{
+          width: 40%;
+          padding: 1rem;
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+      }
+  }
+
+}
+
+.J4D-admin-jobflow3{
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+  .TopNav{
+      height: fit-content;
+  }
+  .Header{
+      height: fit-content;
+  }
+  .Sec1{
+      width: 100%;
+      margin-top: 1rem; 
+      padding: 0.25em;
+      width: 100%;
+      display: flex;
+      background-color: white;
+      border-radius: 10px;
+
+      .Sec1Left{
+          width: 60%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 1rem;
+          .InpGroup{
+              width: 90%;
+              margin-right: auto;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100%;
+
+              .col1{
+                  width: 50%;
+              }
+              .col2{
+                  width: 50%;
+              }
+          }
+
+      }
+      .Sec1Right{
+          width: 40%;
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          #TextArea{
+              width: 90%;
+              border-radius: 5px;
+              padding: 1em;
+              border: 1px solid #c0c0c0;
+          }
+      }
+  }
+  .Sec2{
+      background-color: #ffff;
+      margin-top: 1rem; 
+      padding: 0.25em;
+      width: 100%;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      .Sec2Left{
+          width: 35%;
+          padding: 1rem;
+      }
+      .Sec2Right{
+          width: 40%;
+          padding: 1rem;
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+      }
+  }
+
+}
+.J4D-admin-jobflow4{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  .Sec1{
+      width: 100%;
+      margin-top: 1rem; 
+      padding: 0.25em;
+      width: 100%;
+      display: flex;
+      background-color: white;
+      border-radius: 10px;
+
+      .Sec1Left{
+          width: 33%;
+          padding: 1rem;
+          padding-inline: 2em;
+        
+      }
+      .Sec1Mid{
+          width: 33%;
+          padding-inline: 2rem;
+
+          #prefExp{
+              display: flex;
+              justify-content: space-evenly;
+              align-items: center;
+              margin-top: 2rem;
+              .yrsExpPref{
+                  width: 30%;
+                  margin-right: 1em;
+                  margin: 0.25rem;
+              }
+  
+              .selectbox{
+                  padding: 1rem;
+                  border: 1px #d6d6d6 solid;
+                  border-radius: 5px;
+                  margin: 0.25rem;
+                  min-width: 10em;
+              }
+          }
+          #prefExp2{
+              display: flex;
+              justify-content: space-evenly;
+              align-items: center;
+
+              .selectbox{
+                  padding: 1rem;
+                  border: 1px #d6d6d6 solid;
+                  border-radius: 5px;
+                  margin: 0.25rem;
+                  min-width: 10em;
+              }
+          }
+
+
+          
+      }
+      .Sec1Right{
+          width: 33%;
+          padding: 1rem;
+          padding-inline: 2rem;
+      }
+  }
+  .Sec2{
+      width: 100%;
+      margin-top: 1rem; 
+      padding: 0.25em;
+      width: 100%;
+      display: flex;
+      background-color: white;
+      justify-content: space-between;
+      border-radius: 10px;
+
+      .Col1{
+          width: 40%;
+          padding: 1rem;
+      }
+      .Col2{
+          width: 40%;
+          padding: 1rem;
+      }
+  }
+}

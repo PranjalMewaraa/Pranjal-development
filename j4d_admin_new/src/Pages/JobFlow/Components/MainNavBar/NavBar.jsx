@@ -1,4 +1,4 @@
-import './NavBar.scss'
+//import './NavBar.scss'
 import Logo from './sss.png'
 
 const NavBar = () => {
