@@ -1,74 +1,130 @@
-.body{
-    background-color: #ffff;
-}
-.jobdetails{
-    width:90%;
-    margin-left: auto;
-    margin-right: auto;
+// .body{
+//     background-color: #ffff;
+// }
+// .jobdetails{
+//     width:90%;
+//     margin-left: auto;
+//     margin-right: auto;
 
 
-    .navbar{
-        margin-bottom: 20px;
-    }
+//     .navbar{
+//         margin-bottom: 20px;
+//     }
     
-    .maincontent{
-        background-color: white;
+//     .maincontent{
+//         background-color: white;
 
-      .upperpart{
+//       .upperpart{
 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
         
 
-        .header{
-             padding: 40px;
+//         .header{
+//              padding: 40px;
 
-            .MainHeader{
-              font-size: 26px;
-              color: #06283D;
-              font-weight: 700;
+//             .MainHeader{
+//               font-size: 26px;
+//               color: #06283D;
+//               font-weight: 700;
 
-            }
+//             }
 
-            .secondaryHeader{
-                font-size: 14px;
-                font-weight: 500;
-                color: #06283D;
+//             .secondaryHeader{
+//                 font-size: 14px;
+//                 font-weight: 500;
+//                 color: #06283D;
                 
-            }
-        }
+//             }
+//         }
 
-        .searchbox{
-            padding: 40px;
-            display: flex;
-            justify-content: space-between;
-        }
+//         .searchbox{
+//             padding: 40px;
+//             display: flex;
+//             justify-content: space-between;
+//         }
 
-      }
+//       }
 
 
-      .cards{
+//       .cards{
 
-        .row1{
-            width:95%;
-            height:244px;
-            background-color: yellow;
-            margin-left:auto;
-            margin-right: auto;
-        }
+//         .row1{
+//             width:95%;
+//             height:244px;
+//             background-color: yellow;
+//             margin-left:auto;
+//             margin-right: auto;
+//         }
 
-        .row2{
-            margin-top: 4%;
-            margin-bottom: 8%;
-            width:95%;
-            height:244px;
-            background-color: yellow;
-            margin-left:auto;
-            margin-right: auto;
-        }
-      }
+//         .row2{
+//             margin-top: 4%;
+//             margin-bottom: 8%;
+//             width:95%;
+//             height:244px;
+//             background-color: yellow;
+//             margin-left:auto;
+//             margin-right: auto;
+//         }
+//       }
         
-    }
+//     }
     
+// }
+
+.posted-jobs-page{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+
+  .header-Nav{
+    width: 100%;
+  }
+
+  .Body-content{
+     width: 100%;
+     background-color: white;
+     border-radius: 10px;
+    
+    .Top-Body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        padding-bottom: 0px;
+
+        #SearchBar{
+          width: auto;
+        }
+
+        .headings{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+    }
+    .Body-Bottom{
+      padding: 2rem;
+      height: 60vh;
+      
+      
+
+      .cardlist{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1rem;
+        height: 95%;
+        padding-top: 0.5rem ;
+        overflow-y: scroll;
+        justify-content: space-evenly;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+    }
+
+  }
 }

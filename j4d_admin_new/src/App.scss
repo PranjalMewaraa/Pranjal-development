@@ -2,6 +2,23 @@
   text-align: center;
   font-family: 'Poppins';
   background-color: #F7F6FA;
+  min-height: 100vh;
+}
+
+.page-heading{
+  font-size: larger;
+  margin: 0px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  font-weight: bolder;
+  
+}
+.page-sub-heading{
+  font-size: medium;
+  margin: 0px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  font-weight: normal;
 }
 
 .App-logo {
@@ -38,6 +55,14 @@
     transform: rotate(360deg);
   }
 }
+::-webkit-scrollbar{
+  width:7px!important;
+
+}
+::-webkit-scrollbar-thumb{
+  background-color: #06283d;
+  border-radius: 5px;
+}
 
 .primaryButton{
   background-color: #06283d;
@@ -69,7 +94,7 @@
   width: fit-content;
   height: fit-content;
   border-radius: 5px;
-  border: 2px solid black ;
+  border: 2px solid #f0f0f0;
 }
 
 .TextInputAdminj4d{
