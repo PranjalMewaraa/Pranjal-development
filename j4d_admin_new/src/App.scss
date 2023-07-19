@@ -57,6 +57,7 @@
 }
 ::-webkit-scrollbar{
   width:7px!important;
+  height: 7px;
 
 }
 ::-webkit-scrollbar-thumb{
@@ -263,8 +264,8 @@
   
 .ChipGroup{
   display: flex;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-flow: wrap;
 
   .ChipButton{
@@ -655,11 +656,11 @@
               }
               .SecRightInput{
                   display: flex;
-                  justify-content: start;
+                  justify-content: flex-start;
                   width: 100%;
                   flex-direction: column;
                   
-                  align-items: start;
+                  align-items: flex-start;
                   
                   #valueInputNumber{
                       width: 60%;
@@ -858,5 +859,166 @@
           width: 40%;
           padding: 1rem;
       }
+  }
+}
+.JobCard {
+  min-width: 21%;
+  max-width: 21%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+
+  .Card-Header{
+      display: flex;
+
+      align-items: center;
+      justify-content: space-evenly;
+      
+      .header-left{
+          padding-right: 0.25rem;
+          align-self: flex-start;
+      }
+      .header-right{
+          width: 80%;
+          display: flex;
+
+          justify-content: space-between;
+          #loc{
+              color: gray;
+              font-weight: 600;
+              font-size: small;
+          }
+          #role{
+              font-weight: 600;
+          }
+          #time{
+              color: gray;
+              font-size: small;
+          }
+          .div1{
+              display: flex;
+              align-items: flex-start;
+              flex-direction: column;
+          }
+          .div2{
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+              justify-content: space-between;
+          }
+          p{
+              margin: 0;
+              padding: 0;
+              
+          }
+      }
+  }
+
+  .Card-Body{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding-top: 0.25rem;
+      
+      
+      p{
+          margin: 0;
+          padding: 0;
+      }
+      #desc{
+          font-size: small;
+          text-align: left;
+          text-overflow: ellipsis;
+      }
+      .desc{
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          padding: 0.225rem;
+      }
+      .seek{
+          width: 100%;
+          height: 0.25rem;
+          border-radius: 10px;
+          background-color: gray;
+      }
+      .seekfull{
+          width: 60%;
+          height: 0.25rem;
+          border-radius: 10px;
+          background-color: #0066A5;
+      }
+  }
+  .Card-Footer{
+
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0.25rem;
+      #viewbtn,#delbtn{
+          padding: .25rem;
+          font-size: small;
+          margin: 0.25rem;
+      }
+  }
+  
+}
+
+.posted-jobs-page{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+
+  .header-Nav{
+    width: 100%;
+  }
+
+  .Body-content{
+     width: 100%;
+     background-color: white;
+     border-radius: 10px;
+    
+    .Top-Body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        padding-bottom: 0px;
+
+        #SearchBar{
+          width: auto;
+        }
+
+        .headings{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+    }
+    .Body-Bottom{
+      padding: 2rem;
+      height: 60vh;
+      
+      
+
+      .cardlist{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1rem;
+        height: 95%;
+        padding-top: 0.5rem ;
+        overflow-y: scroll;
+        justify-content: space-evenly;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+    }
+
   }
 }

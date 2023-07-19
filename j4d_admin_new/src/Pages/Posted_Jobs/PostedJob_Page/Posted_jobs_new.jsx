@@ -1,7 +1,7 @@
 import PlainInput from '../../JobFlow/Components/InputBoxes/Plain/TextFieldPlain';
 import TopNav from '../../JobFlow/Components/Navbar/TopNavBar';
 import JobCard from '../Components/JobCard';
-import './Posted_jobs.scss'
+
 import logo from '../Components/logo.png'
 
 const PostedJobs = () =>{

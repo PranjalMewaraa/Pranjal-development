@@ -1,4 +1,4 @@
-import './Posted_jobs.scss'
+
 import TopNavBar from "../../JobFlow/Components/Navbar/TopNavBar";
 
 import PlainInput from '../../JobFlow/Components/InputBoxes/Plain/TextFieldPlain'

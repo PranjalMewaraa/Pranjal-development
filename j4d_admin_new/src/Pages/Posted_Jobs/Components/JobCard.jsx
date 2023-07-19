@@ -1,6 +1,5 @@
 import save from './bookmarkOPen.png'
 import saved from './bookmrkClose.png'
-import './JobCard.scss'
 import edit from './editbtn.png'
 import { useState } from 'react'
 const JobCard = (props) => {
