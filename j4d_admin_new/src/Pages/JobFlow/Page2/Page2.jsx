@@ -1,20 +1,38 @@
-<<<<<<< HEAD
 import Header from '../Components/Header/Header';
 import DoubleRangeSlider from '../Components/InputBoxes/Range/Range';
 import TopNav from '../Components/Navbar/TopNavBar'
-import './Page2.scss'
+//import './Page2.scss'
 import Footer from '../Components/Footer/Footer'
 import vector from '../Assets/vectorP1.png'
 import React, { useState } from 'react';
-import {Routes, Route, useNavigate} from 'react-router-dom';
 import PlainInput from '../Components/InputBoxes/Plain/TextFieldPlain';
 import ChipGroup from '../Components/InputBoxes/ChipGroup/ChipGroup';
 
-const Page2 = () => {
-    const navigate = useNavigate()
-    const options = ['Provident Fund', 'Rent Allowance', 'Stocks', 'Medical Insuarance', 'Wifi Allowance', 'Travel Allowance','Incentives', 'Flexible Hours','Provident Fund', 'Rent Allowance', 'Stocks', 'Medical Insuarance', 'Wifi Allowance', 'Travel Allowance','Incentives', 'Flexible Hours'];
+const Page2 = ({ handleUpdateObject }) => {
+  const options = ['Provident Fund', 'Rent Allowance', 'Stocks', 'Medical Insuarance', 'Wifi Allowance', 'Travel Allowance','Incentives', 'Flexible Hours','Provident Fund2', 'Rent Allowance2', 'Stocks2', 'Medical Insuarance2', 'Wifi Allowance2', 'Travel Allowance2','Incentives2', 'Flexible Hours2'];
   const [selectedOption, setSelectedOption] = useState('');
   const [inputValue, setInputValue] = useState('');
+    
+  const [minValue, setMinValue] = useState(55);
+  const [maxValue, setMaxValue] = useState(100);
+  console.log("page2 "+typeof(handleUpdateObject))
+  const handleMinChange = (e) => {
+    const newMinValue = parseInt(e.target.value);
+    setMinValue(newMinValue);
+    handleUpdateObject((prevObject) => ({
+        ...prevObject,
+        ['MinValue']: minValue,
+      }));
+  };
+
+  const handleMaxChange = (e) => {
+    const newMaxValue = parseInt(e.target.value);
+    setMaxValue(newMaxValue);
+    handleUpdateObject((prevObject) => ({
+        ...prevObject,
+        ['MaxSalary']: maxValue,
+      }));
+  };
 
   const handleOptionChange = (event) => {
     const option = event.target.value;
@@ -22,13 +40,19 @@ const Page2 = () => {
     setInputValue('');
   };
 
-  const handleInputChange = (event) => {
-    const value = event.target.value;
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
     setInputValue(value);
+    handleUpdateObject((prevObject) => ({
+        ...prevObject,
+        [name]: value,
+    }));
   };
 
+ 
+  
     return (
-        <div className="Page2">
+        <div className="J4D-admin-jobflow2">
             <div className="TopNav"><TopNav/></div>
             <div className='Header'> <Header Title = 'Add Compensation' vectorImg = {vector} page = "2"/> </div>
             <div className="Sec1">
@@ -37,7 +61,7 @@ const Page2 = () => {
                     <label htmlFor="optionInput">Set Pay as:</label>
                     <select id="optionInput" value={selectedOption} onChange={handleOptionChange}>
                         <option value="">-- Select Option --</option>
-                        <option value="range">Range</option>
+                        <option value="range">Range(in Thousands)</option>
                         <option value="number">Number</option>
                     </select>
                     </div>
@@ -45,11 +69,18 @@ const Page2 = () => {
                 <div className='Sec1Right'>
                 <div className='InputFieldX'>
                     {selectedOption === 'range' ? (
-                        <div className='SecRightInput'> <DoubleRangeSlider/> </div> 
+                        <div className='SecRightInput'> 
+                        <DoubleRangeSlider  
+                            minValue={minValue}
+                            maxValue={maxValue}
+                            onMinChange={handleMinChange}
+                            onMaxChange={handleMaxChange}    
+                        /> 
+                    </div> 
                     ) : (
                         <div className='SecRightInput'>
                             <label htmlFor="valueInputNumber">Input Salary</label>
-                            <input id="valueInputNumber" type="number" value={inputValue} onChange={handleInputChange} placeholder='50000'/>
+                            <input id="valueInputNumber" type="number" name='Salary' value={inputValue} onChange={handleInputChange} placeholder='50000'/>
                         </div>
                     )}
                 </div>    
@@ -65,27 +96,18 @@ const Page2 = () => {
                     />
                 </div>
                 <div className='Sec2Right'>
-                    <ChipGroup options={options}/>
+                    <ChipGroup options={options} handleUpdateObject={handleUpdateObject}/>
                 </div>
             </div>
             <div className="Footer">
             <Footer
                     primary="Next"
-                    primaryOnclick={() => {
-                        console.log('clicked')
-                        navigate('/postjob/importantInfo')
-                    }}
+                    next = '/postjob/importantInfo'
                     secondary1="Back"
-                    secondary1Onclick={()=>{
-                        navigate('/postjob/basicInfo')
-                    }}
                     secondary2="Discard"
-                    secondary2Onclick={''}
                 />
             </div>
         </div>
     )
 }
 export default Page2
-=======
->>>>>>> parent of e3dbcd0 (Lot of work done)

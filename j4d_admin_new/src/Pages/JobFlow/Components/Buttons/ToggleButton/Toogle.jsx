@@ -1,13 +1,14 @@
-import './Toggle.scss'
+//import './Toggle.scss'
 
-const Toggle = (props) =>{
-    return(
+const Toggle =(props)=>{
+    return (
         <div className='ToggleSwitch'>
-            <label htmlFor="inpToggle">{props.label}</label>
-            <label class="switch" id='inpToggle'>
+            <label htmlFor={props.id}>{props.label}</label>
+            <label id={props.id} class="switch">
                 <input type="checkbox"/>
                 <span class="slider round"></span>
             </label>
+
         </div>
     )
 }
