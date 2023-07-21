@@ -3,6 +3,7 @@ import TopNav from '../Pages/JobFlow/Components/Navbar/TopNavBar'
 import PlainInput from '../Pages/JobFlow/Components/InputBoxes/Plain/TextFieldPlain'
 import Dropdown from '../Pages/JobFlow/Components/InputBoxes/DropDown/DropDownInput'
 import "./Applications.scss"
+import { ApplicationCard } from './Components/ApplicationCard'
 
 const options1 = [
     {value: 'value-1', text: 'Open to work'},
@@ -10,17 +11,19 @@ const options1 = [
     {value: 'value-3', text: 'text-3'}
 ];
 const options2 = [
-    {value: 'value-1', text: 'Open to work'},
+    {value: 'value-1', text: 'Pending'},
     {value: 'value-2', text: 'text-2'},
     {value: 'value-3', text: 'text-3'}
 ];
 
 export const Applications = () => {
   return (
-    <div>
+    <div id='container'>
         <TopNav/>
         <section id='all-applications'>
-            <h2>ALL APLLICATIONS</h2>
+            <div>
+
+            <h2 id='heading'>ALL APLLICATIONS</h2>
             <div className='specs'>
             <PlainInput
                             id = "applicant-name"
@@ -37,16 +40,16 @@ export const Applications = () => {
                             label ="Applicant's ID"
             />
                 <div className='InputFieldPlain'>
-                <label htmlFor="">Working Status</label>
-                    <select className='textInput' value="value-1" onChange={''}>
+                <label>Working Status</label>
+                    <select className='textInput status' value="value-1" onChange={''}>
                             {options1.map(item => {
                                 return (<option key={item.value} value={item.value}>{item.text}</option>);
                             })}
                         </select>
                 </div>
                 <div className='InputFieldPlain'>
-                    <label htmlFor="">Applications Status</label>
-                    <select className='textInput' value="value-1" onChange={''}>
+                    <label>Application Status</label>
+                    <select className='textInput status' value="value-1" onChange={''}>
                             {options2.map(item => {
                                 return (<option key={item.value} value={item.value}>{item.text}</option>);
                             })}
@@ -66,6 +69,21 @@ export const Applications = () => {
                             placeholder="23/03/2023"
                             label ="Applied Date"
             />
+            </div>
+            <div id='cardContainer'>
+                <ApplicationCard/>
+                <ApplicationCard/>
+                <ApplicationCard/>
+                <ApplicationCard/>
+                <ApplicationCard/>
+                <ApplicationCard/>
+                <ApplicationCard/>
+                <ApplicationCard/>
+                <ApplicationCard/>
+                <ApplicationCard/>
+                <ApplicationCard/>
+                <ApplicationCard/>
+            </div>
             </div>
         </section>
     </div>

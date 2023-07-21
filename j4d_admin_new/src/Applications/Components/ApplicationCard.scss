@@ -1,0 +1,43 @@
+#card{
+    background-color: green;
+    box-sizing: border-box;
+    font-size: small;
+    .cardContent{
+        .header{
+            display: flex;
+            justify-content: space-between;
+            .personImage{
+                width: 70px;
+                float: left;
+            }
+            .personInfo{
+            }
+            .buttonContainer{
+                display: flex;
+                flex-direction: column;
+                width: 25%;
+                height: 25%;
+                .button{
+                    background-color: #06283d;
+                    display: block;
+                    width: 10%;
+                    height: 10%;
+                    border-radius: 100%;
+                    padding: 5px;
+                    .button-img{
+                        width: 70%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+                .status{
+                    border: 1px solid black;
+                    display: inline-block;
+                    width: 50px;
+                    padding: 4px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

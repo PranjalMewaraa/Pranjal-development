@@ -1,7 +1,48 @@
-#all-applications{
-    background-color: white;
-    .specs{
-        display: flex;
-        justify-content: space-evenly;
+#container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    #all-applications{
+        background-color: white;
+        padding: 2rem 3rem;
+        width: 93%;
+        #heading{
+            color: #06283d;
+            text-align: start;
+        }
+        .specs{
+            display: flex;
+            justify-content: space-between;
+            .InputFieldPlain{
+                margin: 0;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+            
+                .textInput{
+                    padding: 0.75rem;
+                    font-size: medium;
+                    width: 12em;
+                    border: 1px #d6d6d6 solid;
+                    border-radius: 5px;
+                    -ms-box-sizing:border-box;
+                    -moz-box-sizing:border-box;
+                    -webkit-box-sizing:border-box; 
+                    box-sizing:border-box;
+                    color: dimgray;
+                }
+                .textInput:focus{
+                    border: 1px solid #c0c0c0 ;
+                }
+            
+            }
+        }
+        #cardContainer{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            // grid-template-rows: repeat(3, 1fr);
+            gap: 1rem;
+        }
     }
 }
