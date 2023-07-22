@@ -1,43 +1,159 @@
-#card{
-    background-color: green;
-    box-sizing: border-box;
-    font-size: small;
-    .cardContent{
-        .header{
+// #card{
+//     min-width: 21%;
+  
+//   padding: 1rem;
+//   margin-bottom: 1rem;
+//   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+//    height:162px;
+        
+//     .cardContent{
+//         padding: 2px;
+//         display:flex;
+//         flex-direction: column;
+
+//         .head{
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: space-between;
+//         }
+//     }
+   
+// }
+
+.personImage{
+    width:10%;
+    height:10%;
+}
+
+// .button{
+//     height:40%;
+//     width:40%;
+// }
+
+// #card{
+//     width: 100%;
+  
+//       padding: 1rem;
+//       margin-bottom: 1rem;
+//       box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+//        height:162px;
+// .cardContent{
+//     .header{
+//         display: flex;
+//         justify-content: space-between;
+//         .personImage{
+//             width: 70px;
+//             float: left;
+//         }
+//         .personInfo{
+//             justify-content: center;
+//         }
+//         .buttonContainer{
+//             display: flex;
+//             flex-direction: column;
+//             width: 25%;
+//             height: 25%;
+
+//             .call{
+//               display: flex;
+//               flex-direction: row;
+//               align-items: center;
+
+//                 .button{
+//                     background-color: #06283d;
+//                     display: block;
+//                     width: 10%;
+//                     height: 10%;
+//                     border-radius: 100%;
+//                     padding: 5px;
+//                     .button-img{
+//                         width: 70%;
+                        
+//                         margin-right: auto;
+//                     }
+//                 }
+//             }
+           
+//             .status{
+//                 border: 1px solid black;
+//                 display: inline-block;
+//                 width: 50px;
+//                 padding: 4px;
+//                 font-size: 12px;
+//             }
+//         }
+//     }
+// }
+// }
+
+
+#card{    font-size: 16px;
+          width: 382px;
+          padding: 1rem;
+          margin-bottom: 1rem;
+          box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+           height:162px;
+
+           .cardContent{
+           display: flex;
+           flex-direction: column;
+
+           .header{
             display: flex;
+            flex-direction: row;
             justify-content: space-between;
-            .personImage{
-                width: 70px;
-                float: left;
-            }
-            .personInfo{
-            }
-            .buttonContainer{
+            .left{
                 display: flex;
-                flex-direction: column;
-                width: 25%;
-                height: 25%;
-                .button{
-                    background-color: #06283d;
-                    display: block;
-                    width: 10%;
-                    height: 10%;
-                    border-radius: 100%;
-                    padding: 5px;
-                    .button-img{
-                        width: 70%;
-                        margin-left: auto;
-                        margin-right: auto;
+                flex-direction: row;
+
+                .image{
+                    width:30px;
+                    height:30px;
+                }
+
+                .personInfo{
+                    display: flex;
+                    flex-direction:column;
+                    
+                    justify-content: center;
+                    align-items: center;
+
+                    .content{
+                        justify-content: flex-start;
                     }
                 }
-                .status{
-                    border: 1px solid black;
-                    display: inline-block;
-                    width: 50px;
-                    padding: 4px;
-                    font-size: 12px;
+
+                .buttonContainer{
+                    display: flex;
+                    flex-direction: column;
+
+                    .call{
+                        display: flex;
+                        flex-direction: row;
+                    }
+                  .a{
+
+                    .status{
+                        border: 1px solid black;
+                        display: inline-block;
+                        width: 50px;
+                        padding: 4px;
+                        font-size: 12px;
+                    }
+                  }
+                    
+               
                 }
+
             }
-        }
-    }
+           }
+           }
+
+           .footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top:60px;
+           }
 }
+

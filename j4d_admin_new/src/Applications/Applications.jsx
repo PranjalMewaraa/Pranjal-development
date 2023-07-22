@@ -77,12 +77,7 @@ export const Applications = () => {
                 <ApplicationCard/>
                 <ApplicationCard/>
                 <ApplicationCard/>
-                <ApplicationCard/>
-                <ApplicationCard/>
-                <ApplicationCard/>
-                <ApplicationCard/>
-                <ApplicationCard/>
-                <ApplicationCard/>
+                
             </div>
             </div>
         </section>
