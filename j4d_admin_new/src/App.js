@@ -15,7 +15,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React, { useState } from 'react';
 import Posted_jobs from './Pages/Posted_Jobs/PostedJob_Page/Posted_jobs';
 import PostedJobs from './Pages/Posted_Jobs/PostedJob_Page/Posted_jobs_new';
-import { Applications } from './Applications/Applications';
+import { Applications } from './Pages/Applications/Applications';
 
 function App() {
   const [updatedObject, setUpdatedObject] = useState({});

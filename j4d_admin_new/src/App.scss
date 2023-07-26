@@ -1023,3 +1023,135 @@
 
   }
 }
+#ApplicationsPage{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  #all-applications{
+      background-color: white;
+      padding: 2rem 3rem;
+      width: 93%;
+      #heading{
+          color: #06283d;
+          text-align: start;
+      }
+      .specs{
+          display: flex;
+          justify-content: space-between;
+          .InputFieldPlain{
+              margin: 0;
+              display: flex;
+              justify-content: flex-start;
+              align-items: flex-start;
+              flex-direction: column;
+          
+              .textInput{
+                  padding: 0.75rem;
+                  font-size: medium;
+                  width: 12em;
+                  border: 1px #d6d6d6 solid;
+                  border-radius: 5px;
+                  -ms-box-sizing:border-box;
+                  -moz-box-sizing:border-box;
+                  -webkit-box-sizing:border-box; 
+                  box-sizing:border-box;
+                  color: dimgray;
+              }
+              .textInput:focus{
+                  border: 1px solid #c0c0c0 ;
+              }
+          
+          }
+      }
+      #cardContainer{
+          display: flex;
+          flex-flow: row wrap;
+          gap: 1rem;
+          height: 95%;
+          padding-top: 1rem ;
+          overflow-y: scroll;
+          justify-content: space-evenly;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+      }
+  }
+}
+
+.Application-card{
+  min-width: 21%;
+  max-width: 23%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+  
+
+  .AppCardHeader{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    .Header-real-left{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .Header-left{
+        width: 35%;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .Header-Mid{
+        width: 63%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .p{
+            font-size:medium;
+            margin: 0%;
+        }
+        #name{
+            font-weight: 700;
+        }
+        #workStatus {
+            font-size: small;
+        }
+        #appliedfor{
+            color:#3a96ff ;
+        }
+
+    }
+   .Header-Right{
+    .SectionUp{
+        display: flex;
+
+        .btnimgappcard{
+        border: none;
+        cursor: pointer;
+        appearance: none;
+        background-color: inherit;
+        }
+    }
+    .SectionDown{ 
+        padding-top: 0.5rem;
+        p{
+            margin: 0%;
+            font-size: smaller;
+            border: 1px solid black;
+        }
+    }
+   } 
+  }
+  .AppCard-Footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    color: #455f6e;
+  }
+}
+
