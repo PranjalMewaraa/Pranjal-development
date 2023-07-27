@@ -8,7 +8,7 @@ import Footer from '../Components/Footer/Footer'
 const Page1 = ({handleUpdateObject , updatedObject}) => {
 
     //const[jobPost,updateObject]=useState({})
-    
+
     const [jobRole, setJobRole] = useState('');
     const [state, setState] = useState('');
     const [city, setCity] = useState('');
@@ -102,7 +102,7 @@ const Page1 = ({handleUpdateObject , updatedObject}) => {
                         label ="Experience Required"
                     />
                     </div>
-                    
+
                 </div>
                 <div className='Sec1Right'>
                     <div className='InputGroup2'>
@@ -174,3 +174,4 @@ const Page1 = ({handleUpdateObject , updatedObject}) => {
 }
 
 export default Page1
+
