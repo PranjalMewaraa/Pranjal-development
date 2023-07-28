@@ -1,9 +1,9 @@
 import React from "react";
-import TopNavBar from "../Components/Navbar/TopNavBar";
+import TopNavBar from "../../JobFlow/Components/Navbar/TopNavBar";
 import { GrFormPreviousLink } from "react-icons/gr";
-import pic from "./pic.jpg";
+import pic from "../pic.jpg";
 
-export default function lg() {
+const Lg3 = () => {
   return (
     <div>
       <div
@@ -136,3 +136,5 @@ export default function lg() {
     
   );
 }
+
+export default Lg3;

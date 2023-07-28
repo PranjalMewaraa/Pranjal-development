@@ -1,7 +1,7 @@
 import React from 'react'
-import TopNav from '../../JobFlow/Components/Navbar/TopNavBar';
-import PlainInput from '../Pages/JobFlow/Components/InputBoxes/Plain/TextFieldPlain'
-import Dropdown from '../Pages/JobFlow/Components/InputBoxes/DropDown/DropDownInput'
+import TopNav from '../JobFlow/Components/Navbar/TopNavBar';
+import PlainInput from '../JobFlow/Components/InputBoxes/Plain/TextFieldPlain'
+
 import { ApplicationCard } from './Components/ApplicationCard'
 import logo from './Components/PP.png'
 
