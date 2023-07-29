@@ -1,0 +1,1 @@
+# Applicant/Candidate pages will lands in this directory

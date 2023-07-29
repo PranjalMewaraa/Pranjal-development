@@ -1,9 +1,16 @@
+html{
+  background-color: #F7F6FA;
+}
 
+html{
+  background-color: #F7F6FA;
+}
 .App {
   text-align: center;
   font-family: 'Poppins';
   background-color: #F7F6FA;
   min-height: 100vh;
+  height: fit-content;
 }
 
 .page-heading{
@@ -100,8 +107,8 @@
 }
 
 .TextInputAdminj4d{
-  padding: 1rem;
-  font-size: large;
+  padding: 0.75rem;
+  font-size: medium;
 }
 
 
@@ -153,7 +160,7 @@
     }
     
     input:checked + .slider {
-      background-color: #2196F3;
+      background-color: #06283d;
     }
     
     input:focus + .slider {
@@ -271,26 +278,28 @@
 
   .ChipButton{
     padding: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     margin: 0.25rem;
-    background-color: aliceblue;
+    font-size: small;
+    background-color: white;
     border-radius: 20px;
   
   }
   .selected{
     color: white;
     padding: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     margin: 0.25rem;
+    font-size: small;
     border-radius: 20px;
     background-color: #06283d;
   }
 }
 
 .InputFieldPlain{
-  margin: .5em;
+  margin: .5rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -298,7 +307,7 @@
 
   .textInput{
       padding: 0.75rem;
-      font-size: large;
+      font-size: medium;
       width: 95%;
       border: 1px #d6d6d6 solid;
       border-radius: 5px;
@@ -392,7 +401,7 @@
     background: $lighter-gray;
   }
   
-  .card{
+  .cardRange{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -401,11 +410,11 @@
     overflow: hidden;
   }
   
-  .card h2{
+  .cardRange h2{
     margin-bottom: 40px;
   }
   
-  .card .current-value{
+  .cardRange .current-value{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -413,11 +422,11 @@
     margin-bottom: 10px;
   }
   
-  .card .current-value label{
+  .cardRange .current-value label{
     font-size: 20px;
   }
   
-  .card .current-value input{
+  .cardRange .current-value input{
     margin: 0;
     width: 60px;
     font-size: 16px;
@@ -429,7 +438,7 @@
     background: $shadow-color;
   }
   
-  .card .values{
+  .cardRange .values{
     display: flex;
     justify-content: space-between;
     font-weight: 600;
@@ -451,15 +460,15 @@
   @include dragIndicator("#min", $primary, 2);
   @include dragIndicator("#max", $shadow-color, 1);
   
-  .card .current-value {
+  .cardRange .current-value {
     justify-content: flex-start;
   }
   
-  .card .current-value input {
+  .cardRange .current-value input {
     margin-left: 10px;
   }
   
-  .card .values {
+  .cardRange .values {
     width: 100%;
     justify-content: flex-end;
   }
@@ -499,7 +508,7 @@
 
 .TopNavigation{
   background-color: #ffff;
-  padding: .25em;
+  padding: 1em;
   width: 100%;
   height: fit-content;
   margin-bottom: 1rem;
@@ -508,9 +517,11 @@
       display: flex;
       list-style: none;
       
+      margin-bottom: 0px;
+      
       li{
           margin-right:2rem;
-          font-weight: 700;
+          font-weight: 600;
 
           a{
               color: black;
@@ -626,7 +637,7 @@
               flex-direction: column;
 
               #optionInput{
-                  padding: 1em;
+                  padding: .75rem;
                   width: 80%;
                   border: 1px #d6d6d6 solid;
                   border-radius: 5px;
@@ -650,7 +661,7 @@
               flex-direction: column;
 
               #valueInputNumber{
-                  padding: 1em;
+                  padding: 0.75em;
                   width: 100%;
                   border: 1px #d6d6d6 solid;
                   border-radius: 5px;
@@ -806,7 +817,7 @@
               align-items: center;
               margin-top: 2rem;
               .yrsExpPref{
-                  width: 30%;
+                  width: 40%;
                   margin-right: 1em;
                   margin: 0.25rem;
               }
@@ -845,7 +856,7 @@
   .Sec2{
       width: 100%;
       margin-top: 1rem; 
-      padding: 0.25em;
+      padding: 1rem;
       width: 100%;
       display: flex;
       background-color: white;
@@ -863,17 +874,16 @@
   }
 }
 .JobCard {
-  min-width: 21%;
-  max-width: 21%;
+  min-width: 23%;
+  max-width: 24%;
   padding: 1rem;
   margin-bottom: 1rem;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
 
   .Card-Header{
       display: flex;
-
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
       
       .header-left{
           padding-right: 0.25rem;
@@ -953,7 +963,7 @@
           background-color: #0066A5;
       }
   }
-  .Card-Footer{
+  .Card-Footer-postedjobs{
 
       display: flex;
       justify-content: flex-end;
@@ -965,6 +975,7 @@
           margin: 0.25rem;
       }
   }
+  
   
 }
 
@@ -981,6 +992,7 @@
 
   .Body-content{
      width: 100%;
+     margin-bottom: 1rem;
      background-color: white;
      border-radius: 10px;
     
@@ -1003,7 +1015,7 @@
     }
     .Body-Bottom{
       padding: 2rem;
-      height: 60vh;
+      height: fit-content;
       
       
 
@@ -1023,6 +1035,12 @@
 
   }
 }
+
+.Dashboard{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 #ApplicationsPage{
   width: 90%;
   margin-left: auto;
@@ -1030,7 +1048,7 @@
   #all-applications{
       background-color: white;
       padding: 2rem 3rem;
-      width: 93%;
+      
       #heading{
           color: #06283d;
           text-align: start;
@@ -1122,13 +1140,17 @@
         }
         #appliedfor{
             color:#3a96ff ;
+            text-align: left;
+            line-height: normal!important;
+            font-weight: bold;
+            font-size: small;
         }
 
     }
    .Header-Right{
     .SectionUp{
         display: flex;
-
+        justify-content: space-between;
         .btnimgappcard{
         border: none;
         cursor: pointer;
@@ -1140,7 +1162,9 @@
         padding-top: 0.5rem;
         p{
             margin: 0%;
-            font-size: smaller;
+            font-size: xx-small;
+            font-weight: 500;
+            border-radius: 5px;
             border: 1px solid black;
         }
     }
@@ -1155,3 +1179,167 @@
   }
 }
 
+
+.LighteningPage{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  .lightening-two{
+      width: 45%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: white;
+      margin-top: 0.5rem;
+  
+  
+      .main-div{
+          padding: 2rem;
+         
+  
+          .number-of-hires-section{
+           
+              .hires-sub-section{
+                  display: flex;
+                  justify-content: space-between;
+              }
+              .page-sub-heading{
+                  text-align: left;
+              }
+              .counter{
+                  display: flex;
+                  margin-top: .5rem;
+                  margin-bottom: .5rem;
+                  width: 20%;
+                  align-items: center;
+                  
+                  justify-content: space-between;
+  
+                  .counter-left,.counter-right{
+                      width: 1.5rem;
+                      height: 1.5rem;
+                  }
+  
+                  .counter-mid{
+                      padding: 0.5rem;
+                      border: 1px solid black;
+                      width: 40%;
+                      margin-top: 1rem;
+                      margin-bottom: 1rem;
+                      border-radius: 5px;
+                  }
+              }
+  
+          }
+          .ad-budget-section{
+              padding-top: 1rem;
+              padding-bottom: 1rem;
+              .page-sub-heading,.page-heading{
+                  text-align: left;
+              }
+              .price-section{
+                  display: flex;
+                  height: 3rem;
+                  overflow: hidden;
+                  border: 1px solid #06283D;
+                  border-radius: 5px;
+                  width: 40%;
+                  justify-content: space-between;
+                  align-items: center;
+                      .price-left{
+                      color: white;
+                      height: 100%;
+                      display: flex;
+                      justify-content: space-around;
+                      width: 15%;
+                      align-items: center;
+                      background-color: #06283D;
+                  }
+                  .price-mid{
+                      width: 60%;
+                      display: flex;
+                      justify-content: space-around;
+                      align-items: center;
+                      background-color: white;
+                      height: 100%;
+                      .price-mid-input,.price-mid-input:active,.price-mid-input:enabled,.price-mid-input:focus{
+                          border: none;
+                          width:90%;
+                      }
+                  }
+                  .price-right{
+                      width:25%;
+                      background-color: #06283D;
+                      height: 100%;
+                      display: flex;
+                      justify-content: space-around;
+                      align-items: center;
+                      color: white;
+                  }
+              }
+          }
+          .duration-section{
+              padding-top: 1rem;
+              padding-bottom: 1rem;
+              .page-sub-heading,.page-heading{
+                  text-align: left;
+              }
+              .drop-down-section{
+                  padding-top: 1rem;
+                  padding-bottom: .25rem;
+                  width: 40%;
+  
+                  .selectbox{
+                      padding: .8rem;
+                      width: 100%;
+                      border-radius: 5px;
+                      font-size: large;
+                  }
+              }
+              .page-sub-sub-heading{
+                  text-align: left;
+              }
+          }
+      }
+      .footer-section{
+          width: 100%;
+          background-color: #ececec;
+  
+          .footer-top{
+              display: flex;
+              align-items: center;
+              .footer-text{
+                  width: 70%;
+                  display: flex;
+                  flex-direction: column;
+                  text-align: left;
+                  padding: 3rem;
+  
+                  .footerheading{
+                      margin: 0;
+  
+                      .span-text{
+                          font-size: xx-large;
+                          font-weight: 700;
+                          color: #06283D;
+                      }
+                  }
+              }
+              .footer-btn{
+                  padding: 1rem;
+                  background-color: #06283D;
+                  color: white;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 1rem;
+                  height: fit-content;
+                  border-radius: 5px;
+                  font-size: large;
+              }
+              
+          }
+      }
+  
+  }
+}
