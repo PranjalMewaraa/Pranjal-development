@@ -1,0 +1,1847 @@
+/* NAV BAR Page CSS  */
+body{
+    background: #f2f2f2;
+    font-family: 'Nunito', sans-serif !important;
+  }
+  .j4DLogo{
+    max-width: 100px;
+    cursor: pointer;
+  }
+  
+  .navBarContainer{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+  }
+  
+  .navBarMain{
+    padding : 0;
+    max-width: 100%;
+    box-shadow: 0 7px 29px 0 hsl(240deg 5% 41% / 20%);
+    background: #06283D;
+    min-height: 56px;
+  }
+  
+  .navContainer{
+    margin: 0;
+    max-width: 100%;
+    justify-content: space-between;
+  }
+  
+  .navLinks{
+    width: 100%;
+    justify-content:  right;
+  }
+  
+  .loginLinks{
+    display: flex;
+    align-items: center;
+  }
+  
+  .navLinks .nav-link{
+    font-weight: 500;
+      font-size: 14px;
+      color: #FFFFFF;
+      display: flex;
+      /* padding: 0; */
+      align-items: center;
+      justify-content: center;
+      height: 56px;
+      border-bottom: 4px solid transparent;
+      transition: 0.7s;
+     
+      padding-bottom: 0
+  }
+  
+  .navLinks .nav-link:hover{
+    border-bottom: 3px solid #389759;
+    
+  }
+  
+  .navLinks .nav-link:focus{
+    color: #FFFFFF;
+  }
+  
+  .divider{
+    width: 1px;
+    opacity: 0.5;
+    background: rgba(0,0,0,0.5);
+  }
+  
+  /* Search Bar CSS */
+  
+  .containerTitleHeading{
+    width: 40% !important;
+    text-align: left !important;
+    line-height: 50px !important;
+    text-transform:uppercase
+  }
+  
+  .containerTitleHeading span{
+    color: #0d3b66;;
+    font-weight: 700;
+  }
+  
+  .searchContainer{
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .searchContainer.grContainer{
+    margin: 20px auto;
+  }
+  
+  .searchContainer.searchMain{
+    max-width: 100%;
+    max-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    padding: 0;
+  }
+  
+  .containerTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+  }
+  
+  
+  
+  .searchBar{
+    width: 100%;
+    height: auto;
+    background: #f8f9fa;
+    border-radius: 60px;
+    box-shadow: 0 7px 23px 0 hsl(240deg 5% 41% / 20%);
+    
+  }
+  
+  .sbInternalContainer{
+    margin: 20px auto;
+    padding: 10px 10px;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+  }
+  
+  .sbInput{
+    padding: 10px 10px;
+    width: 100%;
+    border-radius: 30px;
+    background: transparent;
+    border: 2px solid #0d3b66; 
+    color: #FFFFFF;
+    text-align: center;
+    
+  }
+  
+  .sbInput::placeholder{
+    color: #0d3b66;
+  }
+  
+  .sbInput:hover{
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: placeholder-glow;
+  }
+  
+  .sbInput:focus{
+    animation: none
+  }
+  
+  .sbInput:focus{
+    outline: none;
+  }
+  
+  .sbSearchCompanydiv{
+    width: 25%;
+    
+  }
+  
+  .sbPopularSearch{
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    margin: 10px 0px;
+  }
+  
+  .sbPopularHeading{
+    font-size: 12px;
+  }
+  .sbPopularHeading span{
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #000000;
+  }
+  
+  
+  
+  /* Graze CSS Starts Here  */
+  
+  .landingPageInnerContainer{
+    position: relative;
+    padding-top: 56px;
+  }
+  
+  .grazeHeading{
+    text-transform: uppercase;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grBrCompName{
+    background-color: linear-gradient(toright, #DECBA4, #3E5151);
+    width: 90%;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin: 40px auto;
+  }
+  
+  .brJobCompName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .brJobCompName p{
+    margin: 0;
+    color: #343a40;
+    font-weight: bold;
+  }
+  
+  .brJobCount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .brJobCount p{
+    margin: 0;
+    color: #343a40;
+  }
+  
+  .grBrCompName::-webkit-scrollbar {
+    /* display: none; */
+    width: 5px;
+    height: 7px;
+  }
+  
+  .grBrCompName::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  .grBrCompName::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  .grBrCompName::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+  .grNameInternal{
+    display: flex;
+    padding-bottom: 10px;
+  }
+  
+  .grazeHeading span{
+    color : #0d3b66;
+    font-weight: 700;
+  }
+  
+  .placeholder{
+    cursor: auto
+  }
+  
+  .placeholder:hover{
+    animation: placeholder 2s ease-in-out infinite;
+  }
+  
+  .grBrowseComp{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  
+  /* .compName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+    min-width: 140px;
+    flex-direction: column;
+    background: #dee2e6;
+    border-radius: 20px;
+    padding : 10px 0px;
+  } */
+  
+  .compName img{
+    max-width: 100%;
+    max-height: 100%;
+  
+  }
+  
+  
+  .grStreamsName{
+    flex-direction: row;
+  }
+  
+  
+  /* Login Page CSS */
+  
+  .login_content{
+    margin-top: 40px;
+  }
+  .loginform{
+    padding-top: 20px;
+  }
+  .loginopt{
+    display: flex;
+  }
+  .login_email,.login_mobile{
+    width: 50%;
+    text-align: center ;
+    cursor: pointer;
+    font-family: 'Bree Serif', serif;
+  }
+  .loginoptselected{
+    border-bottom: 3px solid #5271ff;
+    color: #5271ff;
+    font-size: 18px;
+  
+  }
+  .loginbutton{
+    text-align: center;
+  
+  }
+  .forgotpassword{
+    text-align: right;
+    padding: 10px 10px 0px 0px;
+    margin: 0!important;
+    cursor:pointer;
+  
+  
+  }
+  .forgotpassword:hover{
+    color: #5271ff;
+  }
+  
+  
+  
+  /* Streams CSS below  */
+  
+  .streamsBackground{   
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background: #000000;
+    position: relative;
+    margin: 0px 10px;
+  }
+  
+  .streamName{
+    color: #f4f3ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    text-align: center;
+  }
+  
+  .eventLogoImg{
+    position: relative;
+    object-fit: cover;
+    opacity: .5;
+  }
+  .mt-6{
+    margin-top: 5rem;
+  }
+  .section{
+    padding: 20px;
+  }
+  .pl-6 
+  {
+    padding-left: 6rem;
+  }
+  .pr-6{
+  padding-right: 6rem;
+  }
+  
+  ._lft_grd {
+    border-right: 2px dashed gray;
+  }
+  ._dark{
+    background-color: #000000;
+  }
+  .__light{
+    background-color: white;
+  }
+  ._aftrnav{
+    margin-top: 75px;
+  }
+  .main__heading{
+    width: 100%;
+    background-color: white;
+    padding-top: 60px;
+    height: 120px;
+  }
+  .__lclr{
+    font-size: 2.5rem;
+    color: #5271ff;
+  }
+  .has-search .form-control {
+    padding-left: 2.375rem;
+  }
+  
+  .has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+  }
+  .profileImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -60px;
+  }
+  img.pro_img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    
+  }
+  .profileData {
+    width: 100%;
+    background: black;
+    border-radius: 20px;
+    padding: 30px 15px;
+  }
+  .profileDet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+     
+  }
+  .__name {
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+  }
+  .__desig ,.__comp{
+    font-size: 14px;
+    color: #a8a3a3;
+  }
+  .verify{
+    width: 22px;
+    margin-left: 10px;
+  }
+  .__list {
+    display: flex;
+    align-items: center;
+  }
+  .__lft_h,.__coln{
+    color: white;
+  }
+  .__lft_h{
+   flex-basis: 40%;
+  }
+  .__coln{
+    flex-basis: 5%;
+  }
+  .__rgt_vl{
+    flex-basis: 55%;
+  }
+  .__rgt_vl{
+    color: rgb(219, 219, 219);
+    font-size: 14px;
+  }
+  ._pro_det_all {
+    margin-top: 20px;
+  }
+  ._pro_tools {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .score ,._detl{ 
+    padding: 5px 20px;
+    border: 2px solid white;
+    border-radius: 30px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    
+  }
+  ._detl{
+    color: white;
+    cursor: pointer;
+  }
+  .__{
+    color: white;
+    font-size: 14px;
+  }
+  .__stts{
+    color: rgb(10, 216, 10);
+    font-size: 14px;
+  }
+  
+  /*ALL JOBS PAGE CSS */
+  ::-webkit-scrollbar {
+    height: 7px;
+    width: 5px;
+  }
+  ::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-track {
+    border-radius: 92px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #06283D;
+  }
+  ::-webkit-scrollbar-track {
+    background: #EDEDED
+  }
+  
+  .Header{
+    background-color: #fff;
+    width: 100%;
+  
+  }
+  .JDP{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .Header{
+    height: 50vh;
+    background-color: #000000;
+    display: flex;
+    background-image: url('./Components/AllJobs/Images/cover.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  .PopOrgs{
+    height: 43vh;
+    background-color: aqua;
+  }
+  .AllJobs{
+    height: fit-content;
+    display: flex;
+    width: 100%;
+    margin-top: 16px;
+    flex-direction: column;
+  }
+  .AllJobs-header{
+    display: flex;
+    width: 100%;
+  }
+  .AllJobs-Body{
+    display: flex;
+    width: 100%;
+  }
+  .AllJobs-Body-SideBar{
+    width: 30%;
+    color: #fff;
+    background-color: #05283C;
+    padding: 20px;
+    text-align: start;
+    margin: 10px;
+    border-radius: 5px;
+    max-height: fit-content;
+    height: 100vh;
+  }
+  .AllJobs-Body-MainSec{
+    width: 70%;
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5px;
+    padding-top: 5px;
+    margin-top: 10px;
+    max-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .JDP-SearcBar{
+    display: flex;
+    background-color: #fff;
+    width: 50%;
+    max-height: 70px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px black;
+    height: 18vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    justify-content: space-between;
+  }
+  .JDP-SearcBarBody{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    flex-direction: column;
+  }
+  .JDP-SearcBarBody h1{
+    color: #fff;
+  }
+  #img1 {
+    width: 4.7em;
+    height: 3em;
+    aspect-ratio: 1;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  #img2 {
+    width: 4em;
+    height: 2em;
+    margin-top: auto;
+    margin-bottom: auto;
+    aspect-ratio: 1;
+    padding-left: 1em;
+    padding-right: 1em;
+  
+  }
+  #SearchAllJobs{
+    border: none;
+    width: 30%;
+  }
+  #SearchSubmitAllJobs{
+    margin-right: 10px;
+    background-color: #023555;
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    width : 20%;
+    border-radius: 5px;
+  }
+  #SearchSubmitAllJobs1{
+    margin-right: 10px;
+    background-color: #f7f7f7;
+    color: #1d1d1d;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    width : 20%;
+    border-radius: 5px;
+  }
+  .cardexp-PO{
+    background-color: #023555;
+    color: #fff;
+    width: fit-content;
+    padding: 10px;
+    align-self: flex-end;
+    border-radius: 10px 0px 0px 0px;
+    transform: translateY(7px);
+  }
+  .Cards-PO{
+    width: 200px;
+    background-color: rgb(255, 254, 253);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #282c34;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .Cards-PO-Top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+  }
+  .Cards-PO-Top img{
+    padding: 20px;
+  }
+  .Card-PO-body{
+    text-align: left;
+    padding: 10px;
+    font-weight: 400;
+    margin: 0%;
+  }
+  #Card-PO-title,#Card-PO-Subtitle{
+    margin: 0%;
+    padding: 3%;
+  }
+  .PO-nav_bar ul{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    border-bottom: #4b4b4b ;
+  }
+  .Position-PO-sidebar,.Availablity-PO-sidebar,.Mode-PO-sidebar,.Salary-PO-sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-left: 10px;
+  }
+  .CardAJ{
+    width: 45%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.4px 0.4px 7px rgb(100, 100, 100);
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+    display: flex;
+    text-align: justify;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    height: fit-content;
+    margin-bottom: 2em;
+    margin-right: 2em;
+  }
+  .J4D-Card-CardBody{
+    padding: 5px;
+  }
+  .J4D-Cardbody-head{
+    display: flex;
+  }
+  .J4D-Cardbody-head h1{
+    color: black;
+    font-size: 16px;
+  }
+  .J4D-Cardbody-head p{
+    color: black;
+    font-size: 12px;
+  }
+  .J4D-CardBody-body p{
+    color: black;
+    font-size: 12px;
+  }
+  .J4D-Cardbody-head-textarea{
+    margin-left: 5px;
+  }
+  .J4D-Cardbody-head img{
+    height: 55px;
+    width: 55px;
+  }
+  .J4D-CardBody-foot p{
+    color: black;
+    width: fit-content;
+    font-size: 8px;
+    font-weight: 600;
+    background-color: #F3F3F4;
+    border: 1px solid #ffff;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  .J4D-CardBody-foot{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+  }
+  .MainSide{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  label{
+    padding-left: 10px;
+  }
+  
+  .AllJobs-Body-SideBar h5{
+   padding-bottom: 10px;
+   font-weight: 300;
+  }
+  .AllJobs-Body-SideBar h4{
+    padding-bottom: 10px;
+    font-weight: 350;
+    margin-bottom: 1%;
+   }
+  .MainSide{
+    padding-top: 16px;
+  }
+  
+  .AllJobs-header li{
+    color: rgb(68, 68, 68);
+    font-size: 20px;
+    cursor: pointer;
+     padding-right: 5%;
+  }
+  .AllJobs-header li:after {
+    display: block;
+    content: '';
+    color: #3d3d3d;
+    font-weight: bold;
+    border-bottom: solid 3px #05283C;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+  }
+  .AllJobs-header li:hover:after{
+    font-weight: bold;
+    padding-bottom: 1%;
+    transform: scaleX(1);
+  }
+  .AllJobs-header li:hover{
+    font-weight: bold;
+  }
+  .AllJobs-header ul{
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    margin-top: 5em;
+    list-style: none;
+    border-bottom: 0.5px solid #4b4b4b;
+    justify-content: flex-start;
+    align-items:flex-start;
+  }
+  .Appx{
+    margin-bottom: 2em;
+  }
+  .LogoAJCard{
+    width:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .CardBodyAJ{
+    width: 65%;
+    height: 100%;
+    margin-top: 1%;
+    padding: 1%;
+  }
+  .TTitle{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footAJ{
+    display: flex;
+    justify-content: space-between;
+  }
+  .bodyAJ{
+    display: flex;
+    width: 100%;
+  }
+  #RangeAJ{
+    color: #00c8ff;
+  }
+  .CardAJ h5{
+    padding: 5px;
+  }
+  .TTitle img{
+    height: 2em;
+    width: 1.5em;
+  }
+  
+  /* Light Blue color for links and highlight */
+  .blue{
+    color: #287AC8;
+  }
+  
+  /* Medium Sized Texts (Register, Buttons) */
+  .medium-text{
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  
+  /* ******** Login Component ******** */
+  
+  .login-container{
+    width: 400px;
+  }
+  
+  .login-title{
+    font-weight: 700;
+  }
+  
+  .form-container{
+    width: 100%;
+  }
+  
+  .inputField{
+    width: 100%;
+    height: 50px;
+    position: relative;
+  }
+  
+  .inputLabel{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 100%;
+    font-weight: 500;
+    color: #605f5f;
+    transition: 0.2s all;
+    cursor: text;
+    
+  }
+  
+  .inputBox{
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    font-weight: 500;
+    border: 1px solid #d5d5d5;
+    border-bottom: 1px solid var(--primary);
+  }
+  
+  .inputBox:focus{
+    outline: none;
+  }
+  
+  
+  .inputBox:focus~.inputLabel,
+  .inputBox:valid~.inputLabel{
+    top: 3px;
+    font-size: 0.8rem;
+    color: var(--secondary);
+  }
+  
+  .nativeSubmitButton{
+    border: 0;
+    padding: 10px 0;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    width: 100%;
+  }
+  
+  .remember-text{
+    font-size: 12px;
+    font-weight: 400;
+    color: #605f5f;
+    padding: 10px 0;
+  }
+  
+  .forgot-password{
+    font-size: 12px;
+    font-weight: 400;
+    color: #605f5f;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover{
+    color: #287AC8;
+  }
+  .forgot-password:active{
+    color: #605f5f
+  }
+  
+  /* Other Sign In Methods */
+  .line{
+    display: inline;
+    width: 100%;
+    background-color: #000;
+  }
+  
+  .other-methods-text{
+    display: inline-block;
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 500;    
+    margin: 0 20px;
+    text-align: center;
+  }
+  
+  .text_3{
+    font-size: 0.8rem;
+  }
+  
+  
+  
+  /* ********Signup Component ******** */
+  
+  .signup-container{
+    padding: 40px 48px;
+  }
+  
+  .tagline-text{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #454545;
+  }
+  
+  .register-text{
+    padding-bottom: 0.5rem;
+  }
+  
+  .signup-heading{
+    font-size: 1.56rem;
+    font-weight: 600;
+    padding-bottom: 0.3rem;
+  }
+  
+  .floatingLabel{
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    width: 100%;
+    font-weight: 500;
+    color: #605f5f;
+    transition: 0.2s all;
+    cursor: text;
+    font-size: 0.8rem;
+  }
+  .inputBox:focus~.floatingLabel,
+  .inputBox:valid~.floatingLabel{
+    top: 3px;
+    font-size: 0.8rem;
+    color: var(--secondary);
+  }
+  
+  
+  .inputField select{
+    
+    bottom: 10px;
+    width: 30%;
+    outline: 0;
+    border: 0;
+    margin: 20px 0 0 6px;
+    color: #605f5f;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .uploadLabel{
+    font-size: 0.8rem;
+    color: var(--secondary);
+    font-weight: 500;
+  
+  }
+  
+  .uploadBox{
+    width: 100%;
+      
+      padding: 0.2rem 0;
+      color: #605f5f;
+      font-size: 0.8rem;
+      font-weight: 500;
+      cursor: pointer;
+  }
+  
+  .uploadBox::-webkit-file-upload-button{
+    color: white;
+    background-color: var(--primary);
+    padding:4px;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  
+  /* Label for gender selector */
+  
+  .gender-label{
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--primary);
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  
+  .options{
+    display: inline-block;
+  }
+  
+  .radio-label{
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--primary);
+    padding: 2px 2px;
+    font-weight: 400;
+    vertical-align: middle;
+  
+  }
+  
+  .gender-radio{
+    vertical-align: middle;
+    margin-left: 1rem;
+  }
+  
+  .google-submit{
+    border: 0;
+    padding: 10px 0;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #F6F5F5;
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .google-img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  /* Terms and Conditions */
+  .terms-text{
+    font-size: 10px;
+    font-weight: 400;
+    color: #000;
+    padding: 10px 0;
+  }
+  
+  
+  /* ********Login & Signup Main Page******* */
+  
+  .sideImg{
+    height: 100vh;
+    width: 55vw;
+    position: fixed;
+  }
+  
+  .login-signup-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "overlap";
+    /* border: 2px solid black; */
+  }
+  
+  .loginComp{
+    grid-area: overlap;
+    align-self: center;
+    justify-self: center;
+  }
+  .signupComp{
+    grid-area: overlap;
+    align-self: center;
+    justify-self: center;
+  }
+  
+  
+  /***** Rejected Page *****/
+  
+  .rejectedPageContainer{
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .rejectedHeroContainer{
+    padding: 20px 0;
+    height: auto;
+  }
+  
+  
+  .statusLeftColumn{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .statusMidColumn{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .statusRightColumn{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  
+  
+  /* Status Navigation Component */
+  .currentPageContainer{
+    padding: 16px;
+  }
+  
+  .pageNavigationText{
+    padding-right: 0.6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .pageNavigationTextLink{ 
+     text-decoration: none;
+     color: #06283D;
+     text-emphasis: none;
+  }
+  .pageNavigationTextLink:hover{
+    color: #06283D;
+  }
+  
+  .pageNavigationArrow{
+    padding: 20px 0;
+    padding-right: 0.6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  /* ****Company Detail Component**** */
+  
+  .statusCompanyDetailContainer{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .statusLogoRole{
+    /* position: relative; */
+    display: flex;
+    padding: 10px 20px 0px 20px;
+  }
+  
+  .statusCompanyLogo{
+    width: 75px;
+    height: 75px;
+    /* position: absolute; */
+    left: 20px;
+    bottom: -30px;
+    margin-top: -50px;
+    margin-right: 30px;
+  }
+  
+  .statusTagline{
+    font-size: 0.8rem;
+    color: #404040;
+    font-weight: 500;
+  }
+  
+  
+  /* Rejected Msg Component */
+  
+  .rejectedMsgContainer{
+    background-color: #890017;
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rejectedMsg{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+  }
+  
+  /* Rejected Tracker Component */
+  
+  .rejectedTrackerContainer{
+    background-color: white;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: auto;
+  }
+  
+  .Title24px{
+    font-size: 24px;
+    font-weight: 600;
+    margin:0;
+  }
+  
+  .trackerLeftContainer{
+    padding: 20px; 
+  }
+  
+  .trackerLeftContainerInside{
+    padding: 30px 0;
+    display: flex;
+    height: 35vh;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .progressBarRejected{
+    width: 10px;
+    height: 100%;
+    background-color: red;
+    border-radius: 50px;
+  }
+  
+  .trackerRejectedText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0 10px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  
+  /* Status Alert Component */
+  
+  .statusAlertContainer{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 26px 20px;
+    border-radius: 8px;
+  }
+  
+  .alertContainerText{
+    margin-right: 20px;
+  }
+  
+  .statusAlertText{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .statusTagline{
+    font-size: 0.7rem;
+  }
+  
+  .statusAlertButton{
+    background-color: var(--primary);
+    color: white;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 6px;
+    font-size: 0.8rem;
+  }
+  
+  
+  /* Status About Job */
+  .statusAboutJobContainer{
+    background-color: white;
+    width: 100%;
+    height: 320px;
+    flex-shrink: 0;
+    max-height: 800px;
+    overflow: scroll;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  
+  .Title22px{
+    font-size: 22px;
+    font-weight: 600;
+    margin:0;
+  }
+  
+  .aboutJobSubText{
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .aboutJobSubText li{
+    font-size: 12px;
+  }
+  
+  /* Status Recommend Component */
+  
+  .statusRecommendContainer{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  .statusRecommendInsideContainer{
+    display: flex;
+    height: 100%;
+    align-items: center;
+  
+  }
+  
+  .statusRecommendImg{
+    width: 30px;
+    height: 30px;
+  }
+  
+  .recommendTitile{
+    text-align: left;
+  }
+  
+  .statusRecommendText{
+    margin-left: 10px;
+  }
+  
+  .recommendTagline{
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  
+  .statusXSmall{
+    font-size: 10px;
+    margin: 0;
+  }
+  
+  
+  /* Status New Jobs Component */
+  
+  .newOpeningsRow{
+    display: flex;
+    overflow: scroll;
+  }
+  
+  .newOpeningsRow::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .newJobOpeningsContainer{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px 0px 20px;
+    border-radius: 8px;
+  }
+  
+  
+  
+  .statusNewJobsTitle{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+  }
+  /* Status Feedback */
+  .statusFeedbackContainer{
+    height: 300px;
+    overflow: scroll;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    overflow-x: hidden;
+  }
+  
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px){
+  
+    .inputField{
+      width: 100%;
+      height: 40px;
+      position: relative;
+    }
+    
+    .inputLabel{
+      position: absolute;
+      font-size: 0.7rem;
+      top: 8px;
+      left: 8px;
+      width: 100%;
+      font-weight: 500;
+      color: #605f5f;
+      transition: 0.2s all;
+      cursor: text;
+      
+    }
+    
+    .inputBox{
+      width: 100%;
+      height: 100%;
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top: 15px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      border: 1px solid #d5d5d5;
+      border-bottom: 1px solid var(--primary);
+      
+      
+      /* padding: 10px 0; */
+    }
+    
+    .inputBox:focus{
+      outline: none;
+    }
+    
+    
+    .inputBox:focus~.inputLabel,
+    .inputBox:valid~.inputLabel{
+      top: 3px;
+      font-size: 0.6rem;
+      color: var(--secondary);
+    }
+    
+  
+  
+    /* Signup Components */
+    .signup-container{
+        padding: 1rem 1rem;
+    }
+  
+    .signup-heading{
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding-bottom: 0.3rem;
+    }
+  
+    .medium-text{
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #454545;
+    }
+  
+    .register-text{
+        padding-bottom: 0.3rem;
+    }
+    
+    .tagline-text{
+        font-size: 0.7rem;
+        font-weight: 500;
+        color: #454545;
+    }
+  
+  
+    .signup-form{
+        height: 100%;
+    }
+  
+  
+    .floatingLabel{
+      position: absolute;
+      top: 3px;
+      left: 8px;
+      width: 100%;
+      font-weight: 500;
+      color: #605f5f;
+      transition: 0.2s all;
+      cursor: text;
+      font-size: 0.6rem;
+    }
+    .inputBox:focus~.floatingLabel,
+    .inputBox:valid~.floatingLabel{
+      color: var(--secondary);
+    }
+  
+    .inputField select{
+        width: 30%;
+        outline: 0;
+        border: 0;
+        margin-right: 8px;
+        color: #605f5f;
+        font-size: 0.6rem;
+        font-weight: 600;
+        cursor: pointer;
+    }
+  
+  
+  .uploadBox{
+    width: 100%;
+    
+    padding: 0.5rem 0;
+    color: #605f5f;
+    font-size: 0.7rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  
+    .radio-label{
+        display: inline-block;
+        font-size: 0.7rem;
+        color: var(--primary);
+        padding: 2px 0;
+        font-weight: 400;
+        vertical-align: middle;
+    
+    }
+  
+    .gender-radio{
+        vertical-align: middle;
+        margin-left: 0.5rem;
+    }
+  
+    .nativeSubmitButton{
+        border: 0;
+        padding: 10px 0;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+  
+    .google-submit{
+        border: 0;
+        padding: 10px 0;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+  
+  
+    
+  }
+  
+  
+  
+  @media screen and (max-width: 300px){
+  
+    /* ********Login Component******** */
+    .line{
+        width: 80%;
+        
+    }
+    .login-container{
+        width: 80vw;
+    }
+  
+    .other-methods-text{
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        font-size: 0.6rem;
+        font-weight: 500;    
+        margin: 0 10px;
+    }
+    
+    .text_3{
+        font-size: 0.6rem;
+    }
+  
+    .google_logo{
+        width: 30px;
+    }
+  
+    .linkedin_logo{
+        width: 30px;
+    }
+  
+    /* Signup Component */
+  
+    .terms-text{
+      font-size: 8px;
+      font-weight: 400;
+      color: #000;
+      padding: 8px 0;
+  }
+  /* Applied tracker */
+  .J4DAppliedtracker{
+    width: 95%;
+    margin-left: auto ;
+    margin-right: auto;
+  
+  }
+  .J4D-Aplliedtracker-header{
+    margin-top:1em ;
+    width: 100%;
+    background-color: #FFFFFF;
+    height:7vh ;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-weight: bold;
+    border-radius: 5px ;
+    box-shadow: 2px 2px 3px #C0C0C0;
+    
+  
+  }
+  .J4D-Aplliedtracker-main{
+    height:90vh ;
+    width:100% ;
+    
+    margin-top: 1em;
+    display: flex;
+  }
+  .J4D-Aplliedtracker-main-Sidebar{
+    width: 25%;
+    height: fit-content;
+    max-height: 90vh;
+    
+  
+  }
+  .J4D-Aplliedtracker-main-Sidebar-list{
+    overflow-y: scroll;
+    width: 100%;
+    max-height: 90vh;
+  }
+  .J4D-Aplliedtracker-main-body{
+    width: 73.5%;
+    height: 90vh;
+   
+   
+  }
+  .J4D-Trackercard{
+    width: 32%;
+    height: fit-content;
+    background-color: #fff;
+    padding: 1em;
+    box-shadow: 1px 1px 2px #C0C0C0;
+    margin-left: 1.3%;
+    margin-bottom: 1.3%;
+    border-radius: 3px;
+    
+  
+  }
+  .J4D-Trackercard-header{
+    display: flex;
+    width: 100%;
+  }
+  .J4D-Trackercard-header-logo{
+   width: 22%;
+   display: flex;
+   align-items: center;
+   object-fit: cover;
+   margin-right: 2%;
+   box-shadow: 2px 2px 2px #C0C0C0;
+   border-radius: 50%;
+   aspect-ratio: 1/1;
+   height: fit-content;
+   
+  }
+  .J4D-Trackercard-header-tittle{
+  width: 80%;
+  
+  }
+  .J4D-Trackercard-header-tittle-bottom{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: #6A6a6a;
+  }
+  .J4D-Trackercard-body-text{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0.5em;
+  }
+  .trackerbar{
+    width: 19%;
+    height: 30%;
+    background-color:#06283D;
+   
+  
+  }
+  .J4D-Trackercard-body-bar{
+    width: 100%;
+    height: 1.5em;
+    display:flex; 
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+  }
+  .J4D-Trackercard-body-text p {
+   margin-bottom: 0em;
+  }
+  .J4D-Trackercard-body{
+    box-shadow: 1px 1px 2px #C0C0C0;
+    background-image: linear-gradient(#F7FAFA,#f1f9f8);
+  }
+  .J4D-Trackercard-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 1em;
+    padding-right: 1em;
+    
+  }
+  #J4D-Trackercard-footer-Button1{
+    border: none;
+    border-radius: 5px;
+    color:#06283D ;
+    background-color: #ececec;
+    padding-left:1em;
+    padding-right: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    box-shadow: 1px 1px 1px #C0C0C0;
+    font-weight:bold;
+  }
+  #J4D-Trackercard-footer-Button1:hover{
+    border: none;
+    border-radius: 5px;
+    color:#06283D ;
+    background-color: #fbf8f8;
+    padding-left:1em;
+    padding-right: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    box-shadow: 2px 2px 1px #C0C0C0;
+    font-weight:bold;
+  }
+  
+  #J4D-Trackercard-footer-Button2 {
+    border: none ;
+    border-radius: 5px;
+    color:#fff ;
+    background-color: #06283D;
+    padding-left:1em;
+    padding-right: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    box-shadow: 1px 1px 1px #C0C0C0; 
+    width: 100px;
+    
+  }
+  #J4D-Trackercard-footer-Button2:hover {
+    border: none ;
+    border-radius: 5px;
+    color:#fff ;
+    background-color: #00456F;
+    padding-left:1em;
+    padding-right: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    box-shadow: 1px 1px 1px #C0C0C0;
+    
+  }
+  .tracker-card-list{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  }
+  
