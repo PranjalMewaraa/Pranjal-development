@@ -99,7 +99,7 @@ export default [
         sharePolicies : true,
         contactAllowance: true,
         lighteningStatus: {
-            lightening: false,
+            lighteningStat:false,
             tilldate : "",
             hiresNumber : '10',
             adBudget: {
@@ -181,14 +181,14 @@ export default [
         id: 4,
         jobTitle: "FrontEnd-React",
         jobOpening:10,
-        State:'Maharastra',
-        City:'Pune',
+        state:'Maharastra',
+        city:'Pune',
         jobType:'Full Time',
-        DueDate:'16/08/2023',
+        dueDate:'16/08/2023',
         jobField:'Developement',
         workExp : '0-3 Yrs',
         jobLevel: 'Fresher',
-        Pay: '24L - 50L',
+        pay: '24L - 50L',
         benefits: ['provident fund', 'travel allowance', 'Rent allowance','bonus pay'],
         minReq : {
                     req1:'Bachelor’s degree in Computer Science, related technical field of study or equivalent practical experience',
@@ -201,32 +201,32 @@ export default [
         jobDesc : 'As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.',         
         skills: ['React','JavaScript','Scss','RestApi','DataStructures'],
         preferances : {
-            CandidatesWillingToRelocate : true,
-            ExperiencedCandidates : true,
-            SkillBadgePreferance : true,
-            ProfileCompletion: true,
-            SkillExp : {
+            candidatesWillingToRelocate : true,
+            experiencedCandidates : true,
+            skillBadgePreferance : true,
+            profileCompletion: true,
+            skillExp : {
                 skillName:"React",
-                Exp : '2'
+                exp : '2'
             },
-            PriorityLoc : 'Mumbai',
-            AppliedBefore : '12/08/23',
+            priorityLoc : 'Mumbai',
+            appliedBefore : '12/08/23',
         },
-        RecruiterEmail: 'xyz@gmail.com',
+        recruiterEmail: 'xyz@gmail.com',
         orgLinkedIn: 'org.linkedin.com',
         sharePolicies : true,
-        ContactAllowance: true,
-        LighteningStatus: {
-            Lightening: false,
+        contactAllowance: true,
+        lighteningStatus: {
+            lightening: false,
             tilldate : "",
-            HiresNumber : '10',
-            AdBudget: {
+            hiresNumber : '10',
+            adBudget: {
                 type:'Daily',
-                Amount:'813'
+                amount:'813'
             },
-            Duration:"Run Continously",
+            duration:"Run Continously",
             location:'Mumbai',
-            Estimatedresults:{
+            estimatedresults:{
                 impressions:'20k',
                 clicks :'12k',
                 applications:'500+'
