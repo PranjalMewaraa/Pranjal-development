@@ -898,9 +898,10 @@ html{
   }
 }
 .JobCard {
-  min-width: 23%;
-  max-width: 24%;
+  min-width: 386px;
+  max-width: 386px;
   padding: 1rem;
+  margin-right: .75rem;
   margin-bottom: 1rem;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
 
@@ -956,7 +957,13 @@ html{
       width: 100%;
       padding-top: 0.25rem;
       
-      
+      .seekArea{
+        width: 100%;
+        text-align: left;
+      }
+      .seekArea-hidden{
+        display: none;
+      }
       p{
           margin: 0;
           padding: 0;
@@ -964,6 +971,8 @@ html{
       #desc{
           font-size: small;
           text-align: left;
+          padding-top: 0.5rem;
+          margin-bottom: .5rem;
           text-overflow: ellipsis;
       }
       .desc{
@@ -998,6 +1007,41 @@ html{
           font-size: small;
           margin: 0.25rem;
       }
+  }
+  .Card-Footer-Lightening{
+    display: flex;
+    padding-top: .5rem;
+    padding-bottom: .25rem;
+    justify-content: space-between;
+    p{
+      margin: 0;
+      padding: .25rem;
+      color: #ffe600;
+      font-size: smaller;
+    }
+    .fleft{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+  .Card-Footer-cloud{
+    display: flex;
+    width: 100%;
+    padding-top: .5rem;
+    padding-bottom: .25rem;
+    justify-content: space-between;
+    p{
+      margin: 0;
+      padding: .25rem;
+      font-size: smaller;
+    }
+    .fleft{
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+      align-items: center;
+    }
   }
   
   
