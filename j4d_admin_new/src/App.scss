@@ -898,10 +898,9 @@ html{
   }
 }
 .JobCard {
-  min-width: 386px;
-  max-width: 386px;
+  min-width: 23%;
+  max-width: 24%;
   padding: 1rem;
-  margin-right: .75rem;
   margin-bottom: 1rem;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
 
@@ -957,13 +956,7 @@ html{
       width: 100%;
       padding-top: 0.25rem;
       
-      .seekArea{
-        width: 100%;
-        text-align: left;
-      }
-      .seekArea-hidden{
-        display: none;
-      }
+      
       p{
           margin: 0;
           padding: 0;
@@ -971,8 +964,6 @@ html{
       #desc{
           font-size: small;
           text-align: left;
-          padding-top: 0.5rem;
-          margin-bottom: .5rem;
           text-overflow: ellipsis;
       }
       .desc{
@@ -1008,43 +999,65 @@ html{
           margin: 0.25rem;
       }
   }
-  .Card-Footer-Lightening{
-    display: flex;
-    padding-top: .5rem;
-    padding-bottom: .25rem;
-    justify-content: space-between;
-    p{
-      margin: 0;
-      padding: .25rem;
-      color: #ffe600;
-      font-size: smaller;
-    }
-    .fleft{
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
-  }
-  .Card-Footer-cloud{
-    display: flex;
+  
+  
+}
+
+.posted-jobs-page{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+
+  .header-Nav{
     width: 100%;
-    padding-top: .5rem;
-    padding-bottom: .25rem;
-    justify-content: space-between;
-    p{
-      margin: 0;
-      padding: .25rem;
-      font-size: smaller;
-    }
-    .fleft{
-      display: flex;
-      width: 100%;
-      justify-content: flex-start;
-      align-items: center;
-    }
   }
-  
-  
+
+  .Body-content{
+     width: 100%;
+     margin-bottom: 1rem;
+     background-color: white;
+     border-radius: 10px;
+    
+    .Top-Body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        padding-bottom: 0px;
+
+        #SearchBar{
+          width: auto;
+        }
+
+        .headings{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+    }
+    .Body-Bottom{
+      padding: 2rem;
+      height: fit-content;
+      
+      
+
+      .cardlist{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1rem;
+        height: 95%;
+        padding-top: 0.5rem ;
+        overflow-y: scroll;
+        justify-content: space-evenly;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+    }
+
+  }
 }
 
 .Dashboard{
