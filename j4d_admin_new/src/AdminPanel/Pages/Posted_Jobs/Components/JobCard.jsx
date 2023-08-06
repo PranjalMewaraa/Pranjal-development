@@ -4,10 +4,17 @@ import cloud from '../../../../Assets/Images/lighteningOff.png'
 import thunder from '../../../../Assets/Images/LighteningOn.jpg'
 import edit from './editbtn.png'
 import { useState } from 'react'
+import Lightening from '../../Lightening/Lightening_Page'
 const JobCard = (props) => {
 
     let PageName = props.page;
-
+    let Ficon = {cloud};
+    let Ftext = 'Activate Lightening';
+    let Fclass='';
+    let Ftime = '';
+    let seekArea = ''
+    
+    
     let bookmark;
     const[bookmarkStatus,setBookmark] = useState(props.save)
 
@@ -15,6 +22,17 @@ const JobCard = (props) => {
         bookmark = saved;
     }else if(bookmarkStatus=== 'false'){
         bookmark = save;
+    }
+    
+    if ( props.item.lighteningStatus?.lighteningStat === true ){
+         Fclass =  'Card-Footer-Lightening'
+         Ficon = thunder
+         Ftext = 'Activated'
+         Ftime = '3days left'
+    }else{
+         Fclass= "Card-Footer-cloud";
+         Ficon = cloud
+         Ftext = 'Activate Lightening'
     }
     
     const handleClick =(e)=>{
@@ -29,8 +47,8 @@ const JobCard = (props) => {
                 </div>
                 <div className="header-right">
                     <div className="div1">
-                        <p id='loc'><span></span>{props.location}</p>
-                        <p id='role'>{props.jobRole}</p>
+                        <p id='loc'><span></span>{props.item.city},{props.item.state}</p>
+                        <p id='role'>{props.item.jobTitle}</p>
                     </div>
                     <div className="div2">
                         <img src={bookmark} alt="bookmark" onClick={handleClick} />
@@ -39,10 +57,13 @@ const JobCard = (props) => {
                 </div>
             </div>
             <div className="Card-Body">
-                <p style={{color:'#008FE7', fontWeight:'bolder', fontSize:'larger'}}>{props.salary}</p>
-                <div className='desc'><p id='desc'>{props.desc}</p></div> 
-                <p>Opening Jobs {props.Hired}/{props.TotalOpening}</p>
+                <p style={{color:'#008FE7', fontWeight:'bolder', fontSize:'larger'}}>{props.item.pay}</p>
+                <div className='desc'><p id='desc'>{props.item.jobDesc}</p></div> 
+                <div className={PageName==='ManagePostedJobs'?('seekArea'):('seekArea-hidden')}>
+                <p style={{fontSize:'small',fontWeight:'700'}}>Opening Jobs {props.Hired}/{props.item.jobOpening}</p>
                 <div className='seek'><div className='seekfull'></div></div>
+                </div>
+                
             </div>
             {PageName==='ManagePostedJobs'? (
                 <div className="Card-Footer-postedjobs">
@@ -51,9 +72,12 @@ const JobCard = (props) => {
                     <button className='primaryButton' id='viewbtn'>Applications</button>
                 </div>
             ):(
-                <div className='Card-Footer-Lightening'>
-                    <p><span><img src={cloud} alt="" /></span> text</p>
-                    <p>1212</p>
+                <div className={Fclass}>
+                    <div className='fleft'>
+                        <img src={Ficon} alt="" style={{paddingLeft:'0.5rem'}} />
+                        <p style={{fontWeight:'600'}}> {Ftext}</p>
+                    </div>    
+                    <p>{Ftime}</p>
                 </div>
             )}
             
