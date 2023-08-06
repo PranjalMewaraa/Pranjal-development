@@ -188,7 +188,7 @@ export default [
         jobField:'Developement',
         workExp : '0-3 Yrs',
         jobLevel: 'Fresher',
-        Pay: '24L - 50L',
+        pay: '24L - 50L',
         benefits: ['provident fund', 'travel allowance', 'Rent allowance','bonus pay'],
         minReq : {
                     req1:'Bachelor’s degree in Computer Science, related technical field of study or equivalent practical experience',

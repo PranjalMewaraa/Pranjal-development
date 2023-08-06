@@ -218,7 +218,7 @@ const handleTextArea = (e) =>{
                 page = {page}
             />
         </div>
-        <div className="formBody">
+        <form className="formBody">
               {page === 1 ? (
                   <div className='Page1'>
                       <div className='Sec1'>
@@ -545,9 +545,10 @@ const handleTextArea = (e) =>{
                       </div>
                   </div>
               ) : <div />}
-          </div>
+          </form>
           <div className="footer">
               <Footer
+                
                   primary="Next"
                   next = {()=>setPage(page+1)}
                   back = {()=>setPage(page-1)}

@@ -2,9 +2,23 @@ import PlainInput from '../../JobFlow/Components/InputBoxes/Plain/TextFieldPlain
 import TopNav from '../../JobFlow/Components/Navbar/TopNavBar';
 import JobCard from '../Components/JobCard';
 import logo from '../Components/logo.png'
+import data from '../../../Data/Jobs'
 import NavBar from '../../JobFlow/Components/MainNavBar/NavBar';
 
 const PostedJobs = () =>{
+    const cards = data.map(item => {
+        return (
+            <JobCard
+                key={item.id}
+                item={item}
+                save = 'false'
+                logo = {logo}
+                time = '2'
+                Hired = '5'
+                page = 'ManagePostedJobs'
+            />
+        )
+    }) 
 
   return(
 
@@ -29,95 +43,7 @@ const PostedJobs = () =>{
             </div>
             <div className='Body-Bottom'>
                 <div className='cardlist'>
-                <JobCard
-                 save = 'true'
-                 logo = {logo}
-                 location = 'Hyderabad, IN'
-                 jobRole = 'Frontend Developer'
-                 time = '2'
-                 salary='$1400-$1800'
-                 desc ='It is a long established fact that a reader will be distracted by the readab content of a page while looking at its layout'
-                 Hired = '5'
-                 TotalOpening='10'
-                 />
-            
-                 <JobCard
-                 save = 'true'
-                 logo = {logo}
-                 location = 'Hyderabad, IN'
-                 jobRole = 'Frontend Developer'
-                 time = '2'
-                 salary='$1400-$1800'
-                 desc ='It is a long established fact that a reader will be distracted by the readab content of a page while looking at its layout'
-                 Hired = '5'
-                 TotalOpening='10'
-                 />
-                 <JobCard
-                 save = 'true'
-                 logo = {logo}
-                 location = 'Hyderabad, IN'
-                 jobRole = 'Frontend Developer'
-                 time = '2'
-                 salary='$1400-$1800'
-                 desc ='It is a long established fact that a reader will be distracted by the readab content of a page while looking at its layout'
-                 Hired = '5'
-                 TotalOpening='10'
-                 />
-                 <JobCard
-                 save = 'true'
-                 logo = {logo}
-                 location = 'Hyderabad, IN'
-                 jobRole = 'Frontend Developer'
-                 time = '2'
-                 salary='$1400-$1800'
-                 desc ='It is a long established fact that a reader will be distracted by the readab content of a page while looking at its layout'
-                 Hired = '5'
-                 TotalOpening='10'
-                 />
-                 <JobCard
-                 save = 'true'
-                 logo = {logo}
-                 location = 'Hyderabad, IN'
-                 jobRole = 'Frontend Developer'
-                 time = '2'
-                 salary='$1400-$1800'
-                 desc ='It is a long established fact that a reader will be distracted by the readab content of a page while looking at its layout'
-                 Hired = '5'
-                 TotalOpening='10'
-                 />
-                 <JobCard
-                 save = 'true'
-                 logo = {logo}
-                 location = 'Hyderabad, IN'
-                 jobRole = 'Frontend Developer'
-                 time = '2'
-                 salary='$1400-$1800'
-                 desc ='It is a long established fact that a reader will be distracted by the readab content of a page while looking at its layout'
-                 Hired = '5'
-                 TotalOpening='10'
-                 />
-                 <JobCard
-                 save = 'true'
-                 logo = {logo}
-                 location = 'Hyderabad, IN'
-                 jobRole = 'Frontend Developer'
-                 time = '2'
-                 salary='$1400-$1800'
-                 desc ='It is a long established fact that a reader will be distracted by the readab content of a page while looking at its layout'
-                 Hired = '5'
-                 TotalOpening='10'
-                 />
-                 <JobCard
-                 save = 'true'
-                 logo = {logo}
-                 location = 'Hyderabad, IN'
-                 jobRole = 'Frontend Developer'
-                 time = '2'
-                 salary='$1400-$1800'
-                 desc ='It is a long established fact that a reader will be distracted by the readab content of a page while looking at its layout'
-                 Hired = '5'
-                 TotalOpening='10'
-                 />
+                    {cards} 
                 </div>
                 
             </div>

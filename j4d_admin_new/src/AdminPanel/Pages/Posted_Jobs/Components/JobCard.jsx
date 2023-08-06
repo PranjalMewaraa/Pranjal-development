@@ -5,6 +5,7 @@ import thunder from '../../../../Assets/Images/LighteningOn.jpg'
 import edit from './editbtn.png'
 import { useState } from 'react'
 import Lightening from '../../Lightening/Lightening_Page'
+import { useNavigate } from 'react-router-dom'
 const JobCard = (props) => {
 
     let PageName = props.page;
@@ -12,9 +13,14 @@ const JobCard = (props) => {
     let Ftext = 'Activate Lightening';
     let Fclass='';
     let Ftime = '';
+    let onClick='';
+    const navigate=useNavigate();
     let seekArea = ''
     
-    
+    function handleLightning (){
+        
+         navigate('/lightening/activate');
+    }
     let bookmark;
     const[bookmarkStatus,setBookmark] = useState(props.save)
 
@@ -24,7 +30,7 @@ const JobCard = (props) => {
         bookmark = save;
     }
     
-    if ( props.item.lighteningStatus?.lighteningStat === true ){
+    if ( props.item.lighteningStatus?.lightening === true ){
          Fclass =  'Card-Footer-Lightening'
          Ficon = thunder
          Ftext = 'Activated'
@@ -32,8 +38,11 @@ const JobCard = (props) => {
     }else{
          Fclass= "Card-Footer-cloud";
          Ficon = cloud
+         onClick = handleLightning
          Ftext = 'Activate Lightening'
     }
+
+    
     
     const handleClick =(e)=>{
         bookmarkStatus === 'true' ? setBookmark('false') : setBookmark('true')
@@ -73,7 +82,7 @@ const JobCard = (props) => {
                 </div>
             ):(
                 <div className={Fclass}>
-                    <div className='fleft'>
+                    <div className='fleft' onClick={handleLightning} style={{cursor:"pointer"}}>
                         <img src={Ficon} alt="" style={{paddingLeft:'0.5rem'}} />
                         <p style={{fontWeight:'600'}}> {Ftext}</p>
                     </div>    
