@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 //import './Range.scss'
 
 
@@ -12,7 +13,7 @@ const DoubleRangeSlider = (props) => {
   const [inputMin, setInputMin] = useState(55);
   const [currentMax, setCurrentMax] = useState(100);
   const [inputMax, setInputMax] = useState(100);
-
+  const {setFormData} = props;
   const minValueRef = useRef(null);
   const maxValueRef = useRef(null);
   const sliderRef = useRef(null);
@@ -135,7 +136,7 @@ const DoubleRangeSlider = (props) => {
         <input
           id="min-input"
           type="number"
-          name='MinSalaryRange'
+          name='pay'
           onChange={handleSetMin}
           value={inputMin}
           min={min}
@@ -156,7 +157,7 @@ const DoubleRangeSlider = (props) => {
         <input
           id="max-input"
           type="number"
-          name='MaxSalaryRange'
+          name='pay'
           onChange={handleSetMax}
           value={inputMax}
           min={minForMax()}

@@ -33,10 +33,10 @@ function App() {
          <Routes>
           <Route path="/" element={""}>
             <Route path="/Dashboard" element={<DashBoard/>}></Route>
-            <Route index element={<Page1 handleUpdateObject={handleUpdateObject} updatedObject={updatedObject}/>} />
-            <Route path="/postjob/basic-info" element={<Page1 handleUpdateObject={handleUpdateObject}/>} />
-            <Route path="/postjob/add-compensation" element={<Page2 handleUpdateObject={handleUpdateObject} />} />
-            <Route path="/postjob/important-info" element={<Page3 handleUpdateObject={handleUpdateObject} />} />
+            <Route index element={<Page1/>} />
+            <Route path="/postjob/basic-info" element={<Page1/>} />
+            <Route path="/postjob/add-compensation" element={<Page2  />} />
+            <Route path="/postjob/important-info" element={<Page3 />} />
             <Route path="/postjob/finalize" element={<Page4 />} />
             <Route path="/posted-jobs" element={<PostedJobs/>} />
             <Route path="/application" element={<Applications/>}/>

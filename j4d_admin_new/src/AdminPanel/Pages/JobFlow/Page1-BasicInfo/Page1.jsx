@@ -6,47 +6,25 @@ import imgHeader1 from '../Assets/vectorP1.png'
 import PlainInput from '../Components/InputBoxes/Plain/TextFieldPlain'
 import Footer from '../Components/Footer/Footer'
 import NavBar from '../Components/MainNavBar/NavBar';
-const Page1 = ({handleUpdateObject , updatedObject}) => {
-
-    //const[jobPost,updateObject]=useState({})
+import { Navigate, useNavigate } from 'react-router-dom';
+import data from '../../../Data/Jobs'
+const Page1 = () => {
+    const navigate = useNavigate()
+    const [formData , setFormData] = useState(
+        data
+    )
     
-    const [jobRole, setJobRole] = useState('');
-    const [state, setState] = useState('');
-    const [city, setCity] = useState('');
-    const [exp, setExp] = useState('');
-    const [opening, setOpening] = useState('');
-    const [type, setType] = useState('');
-    const [level, setLevel] = useState('');
-    const [dueDate, setDueDate] = useState('');
-    const [field, setField] = useState('');
+
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        if (name === 'jobRole') {
-            setJobRole(value);
-          }else if (name === 'jobCity') {
-            setCity(value);
-          }else if (name === 'jobExp') {
-            setExp(value);
-          }else if (name === 'jobType') {
-            setType(value);
-          }else if (name === 'jobLevel') {
-            setLevel(value);
-          }else if (name === 'Openings') {
-            setOpening(value);
-          }else if (name === 'DueDate') {
-            setDueDate(value);
-          } else if (name === 'jobState') {
-            setState(value);
-          }else if (name === 'jobField') {
-            setField(value);
-          }
-        console.log("in page1.js"+typeof(handleUpdateObject))
-        handleUpdateObject((prevObject) => ({
-          ...prevObject,
-          [name]: value,
-        }));
-        console.log('page1'+JSON.stringify(updatedObject, null, 2))
+        setFormData(prevFormData => {
+            return {
+                ...prevFormData,
+                [name]: value
+            }
+        })
+        console.log(formData)
       };
 
     return (
@@ -69,8 +47,8 @@ const Page1 = ({handleUpdateObject , updatedObject}) => {
                     <PlainInput
                         id = "jobRole"
                         type = "text"
-                        name = 'jobRole'
-                        value = {jobRole}
+                        name = 'jobTitle'
+                        value = {formData.jobTitle}
                         onChange={handleChange}
                         placeholder="Frontend Developer"
                         label ="Job Role"
@@ -79,8 +57,8 @@ const Page1 = ({handleUpdateObject , updatedObject}) => {
                         <PlainInput
                             id = "jobstate"
                             type = "text"
-                            name = 'jobState'
-                            value = {state}
+                            name = 'state'
+                            value = {formData.state}
                             onChange={handleChange}
                             placeholder="Punjab"
                             label ="State"
@@ -88,8 +66,8 @@ const Page1 = ({handleUpdateObject , updatedObject}) => {
                         <PlainInput
                             id = "jobCity"
                             type = "text"
-                            name = 'jobCity'
-                            value = {city}
+                            name = 'city'
+                            value = {formData.city}
                             onChange={handleChange}
                             placeholder="Ludhiana"
                             label ="City"
@@ -99,8 +77,8 @@ const Page1 = ({handleUpdateObject , updatedObject}) => {
                         id = "ExpReq"
                         type = "number"
                         placeholder="0"
-                        name = 'jobExp'
-                        value = {exp}
+                        name = 'workExp'
+                        value = {formData.workExp}
                         onChange={handleChange}
                         label ="Experience Required"
                     />
@@ -112,8 +90,8 @@ const Page1 = ({handleUpdateObject , updatedObject}) => {
                     <PlainInput
                         id = "OpeningCount"
                         type = "number"
-                        name = 'Openings'
-                        value = {opening}
+                        name = 'jobOpening'
+                        value = {formData.jobOpening}
                         onChange={handleChange}
                         placeholder="0"
                         label ="No of Job Openings"
@@ -121,7 +99,7 @@ const Page1 = ({handleUpdateObject , updatedObject}) => {
                     <PlainInput
                             id = "JobType"
                             name = 'jobType'
-                            value = {type}
+                            value = {formData.jobType}
                             onChange={handleChange}
                             type = "text"
                             placeholder="Full Time"
@@ -131,7 +109,7 @@ const Page1 = ({handleUpdateObject , updatedObject}) => {
                         id = "Joblevel"
                         type = "text"
                         name = 'jobLevel'
-                        value = {level}
+                        value = {formData.jobLevel}
                         onChange={handleChange}
                         placeholder="Fresher.."
                         label ="Job Level"
@@ -146,7 +124,7 @@ const Page1 = ({handleUpdateObject , updatedObject}) => {
                         id = "DueDateHire"
                         type = "date"
                         name = 'DueDate'
-                        value = {dueDate}
+                        value = {formData.DueDate}
                         onChange={handleChange}
                         placeholder="12/01/2023"
                         label ="Hiring Due Date"
@@ -157,7 +135,7 @@ const Page1 = ({handleUpdateObject , updatedObject}) => {
                         id = "JobField"
                         type = "text"
                         name = 'jobField'
-                        value = {field}
+                        value = {formData.jobField}
                         onChange={handleChange}
                         placeholder="Development"
                         label ="Job Field"
@@ -165,12 +143,15 @@ const Page1 = ({handleUpdateObject , updatedObject}) => {
                 </div>
             </div>
             <div className='Footer'>
-                <Footer
-                    primary="Next"
-                    next = '/postjob/add-compensation'
-                    secondary1="Back"
-                    secondary2="Discard"
-                />
+                
+                    <Footer
+                        primary="Next"
+                        next="/postjob/add-compensation"
+                        secondary1="Back"
+                        secondary2="Discard"
+                        setFormData={setFormData}
+                        formData={formData}
+                    />
             </div>
         </div>
         </>

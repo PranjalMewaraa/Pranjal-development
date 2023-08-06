@@ -505,7 +505,10 @@ html{
       justify-content: flex-start;
   }
 }
-
+.active-link{
+    text-decoration: underline;
+    color: blue;
+}
 .TopNavigation{
   background-color: #ffff;
   padding: 1em;
@@ -513,6 +516,8 @@ html{
   height: fit-content;
   margin-bottom: 1rem;
   border-radius: 10px;
+
+  
   ul{
       display: flex;
       list-style: none;
@@ -527,7 +532,12 @@ html{
               color: black;
               text-decoration: none;
           }
+          #NavLink.active {
+            border-bottom: 2px solid #06283d !important; 
+          }
       }
+
+      
   }
   
 }
@@ -874,8 +884,8 @@ html{
   }
 }
 .JobCard {
-  min-width: 23%;
-  max-width: 24%;
+  min-width: 386px;
+  max-width: 386px;
   padding: 1rem;
   margin-right: .75rem;
   margin-bottom: 1rem;
@@ -945,7 +955,7 @@ html{
           padding: 0;
       }
       #desc{
-          font-size: x-small;
+          font-size: small;
           text-align: left;
           padding-top: 0.5rem;
           margin-bottom: .5rem;

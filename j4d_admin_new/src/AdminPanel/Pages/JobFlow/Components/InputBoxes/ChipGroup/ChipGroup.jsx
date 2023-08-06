@@ -1,10 +1,10 @@
 import ChipButtonGroup from "./Chip";
 
-const ChipGroup =({options,handleUpdateObject }) =>{
+const ChipGroup =({options, setFormData }) =>{
     const handleOptionChange = (selectedOptions) => {
         console.log('Selected options:', selectedOptions);
-        handleUpdateObject((prevObject) => ({
-          ...prevObject,
+        setFormData((prevFormData) => ({
+          ...prevFormData,
           ['Benefits']: selectedOptions,
       }));
     };

@@ -8,31 +8,36 @@ import React, { useState } from 'react';
 import PlainInput from '../Components/InputBoxes/Plain/TextFieldPlain';
 import ChipGroup from '../Components/InputBoxes/ChipGroup/ChipGroup';
 import NavBar from '../Components/MainNavBar/NavBar';
+import { useLocation, useNavigate } from 'react-router-dom';
 
-const Page2 = ({ handleUpdateObject }) => {
+const Page2 = () => {
   const options = ['Provident Fund', 'Rent Allowance', 'Stocks', 'Medical Insuarance', 'Wifi Allowance', 'Travel Allowance','Incentives', 'Flexible Hours','Provident Fund2', 'Rent Allowance2', 'Stocks2', 'Medical Insuarance2', 'Wifi Allowance2', 'Travel Allowance2','Incentives2', 'Flexible Hours2'];
   const [selectedOption, setSelectedOption] = useState('');
   const [inputValue, setInputValue] = useState('');
-    
+  const location = useLocation()
+  const { setFormData, formData } = location.state || {};
+  const navigate = useNavigate()
   const [minValue, setMinValue] = useState(55);
   const [maxValue, setMaxValue] = useState(100);
-  console.log("page2 "+typeof(handleUpdateObject))
+
   const handleMinChange = (e) => {
     const newMinValue = parseInt(e.target.value);
     setMinValue(newMinValue);
-    handleUpdateObject((prevObject) => ({
-        ...prevObject,
-        ['MinValue']: minValue,
+    setFormData((prevFormData) => ({
+        ...prevFormData,
+        ['pay']: `${newMinValue}-${maxValue}`,
       }));
+      console.log(formData)
   };
 
   const handleMaxChange = (e) => {
     const newMaxValue = parseInt(e.target.value);
     setMaxValue(newMaxValue);
-    handleUpdateObject((prevObject) => ({
-        ...prevObject,
-        ['MaxSalary']: maxValue,
+    setFormData((prevFormData) => ({
+        ...prevFormData,
+        ['pay']: `${minValue}-${newMaxValue}`,
       }));
+      console.log(formData)
   };
 
   const handleOptionChange = (event) => {
@@ -44,10 +49,11 @@ const Page2 = ({ handleUpdateObject }) => {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setInputValue(value);
-    handleUpdateObject((prevObject) => ({
-        ...prevObject,
+    setFormData((prevFormData) => ({
+        ...prevFormData,
         [name]: value,
     }));
+    console.log(formData)
   };
 
  
@@ -79,12 +85,13 @@ const Page2 = ({ handleUpdateObject }) => {
                             maxValue={maxValue}
                             onMinChange={handleMinChange}
                             onMaxChange={handleMaxChange}    
+                            setFormData={setFormData}
                         /> 
                     </div> 
                     ) : (
                         <div className='SecRightInput'>
                             <label htmlFor="valueInputNumber">Input Salary</label>
-                            <input id="valueInputNumber" type="number" name='Salary' value={inputValue} onChange={handleInputChange} placeholder='50000'/>
+                            <input id="valueInputNumber" type="number" name='pay' value={inputValue} onChange={handleInputChange} placeholder='50000'/>
                         </div>
                     )}
                 </div>    
@@ -100,13 +107,15 @@ const Page2 = ({ handleUpdateObject }) => {
                     />
                 </div>
                 <div className='Sec2Right'>
-                    <ChipGroup options={options} handleUpdateObject={handleUpdateObject}/>
+                    <ChipGroup options={options} setFormData={setFormData}/>
                 </div>
             </div>
             <div className="Footer">
             <Footer
                     primary="Next"
-                    next = '/postjob/important-info'
+                    next = {()=>{
+                        navigate('/postjob/important-info', { state: { setFormData,formData } });
+                    }}
                     secondary1="Back"
                     secondary2="Discard"
                 />
