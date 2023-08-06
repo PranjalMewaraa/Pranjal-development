@@ -1,0 +1,321 @@
+.PostJobForm{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .Page1{
+        .Sec1{
+
+            background-color: #ffff;
+            margin-top: 1rem; 
+            width: 100%;
+            display: flex;
+            border-radius: 10px;
+            justify-content: space-between;
+      
+            .Sec1Left{
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 1em;
+                padding-right: 2.5em;
+      
+                .InputGroup{
+                    width: 100%;
+                    #jobRole{
+                        width: 100%;
+                    }
+                    .inputSetPage1{
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+                        
+                        #jobstate{
+                            margin-right: 1rem;
+                            width: 120%;
+                        }
+                        #jobCity{
+                            width: 100%;
+                        }
+                    }
+                    #ExpReq{
+                        width: 100%;
+                    }
+                }
+               
+            }
+            .Sec1Right{
+                width: 40%;
+                padding: 1em;
+                padding-right: 2.5em;
+            }
+      
+        }
+      
+        .Sec2{
+            background-color: white;
+            margin-top: 1rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            
+            .Sec2Left{
+                width: 40%;
+                padding: 1em;
+                padding-right: 2.5em;
+            }
+            .Sec2Right{
+                width: 40%;
+                padding: 1em;
+                padding-right: 2.5em;
+            }
+            
+      
+        }
+    }
+    .Page2{
+        .Sec1{
+            background-color: #ffff;
+            margin-top: 1rem; 
+            padding: 0.25em;
+            width: 100%;
+            display: flex;
+            border-radius: 10px;
+            justify-content: space-between;
+      
+            .Sec1Left{
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 1em;
+                padding-right: 2.5em;
+                
+                .InputFieldX{
+                    margin: .5em;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-direction: column;
+      
+                    #optionInput{
+                        padding: .75rem;
+                        width: 80%;
+                        border: 1px #d6d6d6 solid;
+                        border-radius: 5px;
+                    }
+                }
+            }
+            .Sec1Right{
+                width: 40%;
+                padding: 1em;
+                padding-right: 2.5em;
+                display: flex;
+                justify-content: center;
+      
+                .InputFieldX{
+                    margin: .5em;
+                    display: flex;
+                    
+                    width: 100%;
+                    justify-content: center;
+                    align-items: flex-end;
+                    flex-direction: column;
+      
+                    #valueInputNumber{
+                        padding: 0.75em;
+                        width: 100%;
+                        border: 1px #d6d6d6 solid;
+                        border-radius: 5px;
+                    }
+                    .SecRightInput{
+                        display: flex;
+                        justify-content: flex-start;
+                        width: 100%;
+                        flex-direction: column;
+                        
+                        align-items: flex-start;
+                        
+                        #valueInputNumber{
+                            width: 60%;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .Sec2{
+            background-color: #ffff;
+            margin-top: 1rem; 
+            padding: 0.25em;
+            width: 100%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            .Sec2Left{
+                width: 35%;
+                padding: 1rem;
+            }
+            .Sec2Right{
+                width: 40%;
+                padding: 1rem;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+        }
+    }
+    .Page3{
+        .Sec1{
+            width: 100%;
+            margin-top: 1rem; 
+            padding: 0.25em;
+            width: 100%;
+            display: flex;
+            background-color: white;
+            border-radius: 10px;
+      
+            .Sec1Left{
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1rem;
+                .InpGroup{
+                    width: 90%;
+                    margin-right: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+      
+                    .col1{
+                        width: 50%;
+                    }
+                    .col2{
+                        width: 50%;
+                    }
+                }
+      
+            }
+            .Sec1Right{
+                width: 40%;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+      
+                #TextArea{
+                    width: 90%;
+                    border-radius: 5px;
+                    padding: 1em;
+                    border: 1px solid #c0c0c0;
+                }
+            }
+        }
+        .Sec2{
+            background-color: #ffff;
+            margin-top: 1rem; 
+            padding: 0.25em;
+            width: 100%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            .Sec2Left{
+                width: 35%;
+                padding: 1rem;
+            }
+            .Sec2Right{
+                width: 40%;
+                padding: 1rem;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+        }
+    }
+    .Page4{
+        .Sec1{
+            width: 100%;
+            margin-top: 1rem; 
+            padding: 0.25em;
+            width: 100%;
+            display: flex;
+            background-color: white;
+            border-radius: 10px;
+      
+            .Sec1Left{
+                width: 33%;
+                padding: 1rem;
+                padding-inline: 2em;
+              
+            }
+            .Sec1Mid{
+                width: 33%;
+                padding-inline: 2rem;
+      
+                #prefExp{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    margin-top: 2rem;
+                    .yrsExpPref{
+                        width: 40%;
+                        margin-right: 1em;
+                        margin: 0.25rem;
+                    }
+        
+                    .selectbox{
+                        padding: 1rem;
+                        border: 1px #d6d6d6 solid;
+                        border-radius: 5px;
+                        margin: 0.25rem;
+                        min-width: 10em;
+                    }
+                }
+                #prefExp2{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+      
+                    .selectbox{
+                        padding: 1rem;
+                        border: 1px #d6d6d6 solid;
+                        border-radius: 5px;
+                        margin: 0.25rem;
+                        min-width: 10em;
+                    }
+                }
+      
+      
+                
+            }
+            .Sec1Right{
+                width: 33%;
+                padding: 1rem;
+                padding-inline: 2rem;
+            }
+        }
+        .Sec2{
+            width: 100%;
+            margin-top: 1rem; 
+            padding: 1rem;
+            width: 100%;
+            display: flex;
+            background-color: white;
+            justify-content: space-between;
+            border-radius: 10px;
+      
+            .Col1{
+                width: 40%;
+                padding: 1rem;
+            }
+            .Col2{
+                width: 40%;
+                padding: 1rem;
+            }
+        }
+    }
+}
+

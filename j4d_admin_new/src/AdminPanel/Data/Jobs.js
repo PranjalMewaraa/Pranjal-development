@@ -13,12 +13,12 @@ export default [
         pay: '24L - 50L',
         benefits: ['provident fund', 'travel allowance', 'Rent allowance','bonus pay'],
         minReq : {
-                    req1:'Bachelor’s degree in Computer Science, related technical field of study or equivalent practical experience',
-                    req2:'Experience programming in Angular/React, JavaScript or TypeScript.',
-                    req3:'Knowledge of web design and the fundamentals of user experience.',
-                    req4:'Understanding of algorithms and data structures, and their time and space performance',
-                    req5:'Excellent problem-solving and troubleshooting skills; ability to work with minimum guidance',
-                    req6:'Bachelor’s degree in Computer Science, related technical field of study or equivalent practical experience'
+                    eq1:'Bachelor’s degree in Computer Science, related technical field of study or equivalent practical experience',
+                    eq2:'Experience programming in Angular/React, JavaScript or TypeScript.',
+                    eq3:'Knowledge of web design and the fundamentals of user experience.',
+                    eq4:'Understanding of algorithms and data structures, and their time and space performance',
+                    eq5:'Excellent problem-solving and troubleshooting skills; ability to work with minimum guidance',
+                    eq6:'Bachelor’s degree in Computer Science, related technical field of study or equivalent practical experience'
                  },
         jobDesc : 'As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.',         
         skills: ['React','JavaScript','Scss','RestApi','DataStructures'],

@@ -32,6 +32,7 @@ const Page4 = () =>{
                     <PlainInput
                         id = "rECRUITEReMAIL"
                         type = "email"
+                        
                         onChange=''
                         placeholder="xyz@Domain.com"
                         label ="Recruiter's Email Address"
