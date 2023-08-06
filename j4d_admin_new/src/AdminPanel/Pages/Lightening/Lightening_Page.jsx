@@ -1,3 +1,8 @@
+import NavBar from "../JobFlow/Components/MainNavBar/NavBar";
+import TopNav from "../JobFlow/Components/Navbar/TopNavBar";
+import data from '../../Data/Jobs'
+import JobCard from "../Posted_Jobs/Components/JobCard";
+import logo from '../Posted_Jobs/Components/logo.png'
 const Lightening = () =>{
     const cards = data.map(item => {
         return (

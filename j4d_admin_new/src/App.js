@@ -30,7 +30,7 @@ function App() {
             <Route path="/postjob/finalize" element={<Page4 />} />
             <Route path="/posted-jobs" element={<PostedJobs/>} />
             <Route path="/application" element={<Applications/>}/>
-            <Route path="/Lightening" element={<Lightening/>}/>
+            <Route path="/Lightning" element={<Lightening/>}/>
             <Route path="/Lightening/activate" element={<Lighteningtwo/>}/>
             <Route path="/Lightening/pay" element={<Lg3/>}/>
             <Route path="/PostJob" element={<JobForm/>}></Route>
