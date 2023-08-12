@@ -1,22 +1,47 @@
 .LighteningPage3{
-
+    width: 90%;
+    margin-inline: auto;
     .lightening-two{
-
+        width: 50%;
+        background-color: white;
+        margin-inline: auto;
+        text-align: left;
+        
         .main-div{
-
+            padding: 2rem;
             .number-of-hires-section{
+                .hires-sub-section{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0.25rem;
+                }
+                .back-btn{
+                    background-color:rgb(244, 239, 239) ;
+                    padding: .25rem;
+                    border-radius: 10px;
+                }
+                #xinp{
+                    margin-right: .5rem;
+                }
 
                 img{
 
                    width:90%;
 
                 }
+                .selectboxx{
+                    padding: .5rem;
+                    background-color: white;
+                    width: 20%;
+                }
 
                 .estimated{
                     border-radius: 1%;
                     width:100%;
                     height:50%;
-                    border:1px solid #000000;
+                    margin-top: .5rem;
+                    border:1px solid #06283D;
                     text-align: left;
                     padding:1rem;
 
@@ -55,6 +80,21 @@
 
             }
 
+        }
+        .footer-section{
+            width: 100%;
+            background-color: rgb(212, 212, 212);
+            padding: 1rem;
+            #price{
+                font-size: xx-large;
+                color: #06283D;
+                font-weight: bold;
+            }
+            .footerheading{
+                color: #06283D;
+                font-size: large;
+                
+            }
         }
     }
 
