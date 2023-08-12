@@ -15,6 +15,7 @@ import Lighteningtwo from "./AdminPanel/Pages/Lightening/lightening_activate/Lig
 import Lg3 from "./AdminPanel/Pages/Lightening/Lightening_pay/Lightening_pay";
 import Lightening from "./AdminPanel/Pages/Lightening/Lightening_Page";
 import JobForm from "./AdminPanel/Pages/JobFlow/JobForm";
+import Talent_Lookup from "./AdminPanel/Pages/TalentLookup/Talent_Lookup";
 function App() {
    
     return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="/Lightening/activate" element={<Lighteningtwo/>}/>
             <Route path="/Lightening/pay" element={<Lg3/>}/>
             <Route path="/PostJob" element={<JobForm/>}></Route>
+            <Route path="/talent-lookup" element={<Talent_Lookup/>}></Route>
           </Route>
         </Routes>
         </BrowserRouter>

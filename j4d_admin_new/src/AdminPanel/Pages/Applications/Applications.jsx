@@ -19,6 +19,7 @@ const options2 = [
 ];
 
 export const Applications = () => {
+  const pageName= 'Applications';
   return ( <>
          <NavBar/>
          <div id='ApplicationsPage'>
